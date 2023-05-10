@@ -1,0 +1,27 @@
+// body{
+//     position: absolute;
+//     display: flex;
+//     flex-direction: column;
+//     background: linear-gradient(to top,#7db7ff,#9ec9fe,#7db7ff);
+//     width: 100%;
+//     height: auto;
+//     top: 0;
+//     left: 0;
+//     margin: 0;
+//     padding: 0;
+
+//     }
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}

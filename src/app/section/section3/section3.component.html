@@ -1,0 +1,56 @@
+<section>
+    <div class="title">
+        <h1>Section 3 Rent Me!</h1>
+    </div>
+    
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <a href="#"><li *ngFor="let element of menu ;let i;"><i *ngFor="let element of icon;let i; "></i>{{i}}</li></a>
+            </ul>   
+        </div>
+        <div class="screen">
+            <video controls autoplay [muted]="true" frameborder="0"loop >
+                <source src="../../../assets/Forgotten Friends [Assetto Corsa Cinematic].mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+            </video>
+            <div class="submenu">
+                <ul>
+                    <a href="#"><li *ngFor="let element of submenu ;let i;">{{i}}</li></a>
+                </ul>  
+            </div>
+
+            <div class="login">
+                <h1>Login &nbsp;Account</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem qui sunt saepe odit illo sit.</p>
+                <form> 
+                    <table>
+                        <tr class="tr"> 
+                            <input class="email" type="email" name="email" id="email" placeholder="Enter your Email" required>
+                        </tr>
+                        
+                        <tr class="tr">
+                            <input class="pw" type="password" name="password" id="password" placeholder="Enter your Password" required>       
+                        </tr>
+                        
+                        <tr>
+                            <div class="connection">
+                                <div class="connectiona">
+                                    <input type="checkbox" name="" id="">Stay connected?
+                                </div>
+                                <div class="connectionb">
+                                    <a>Forgot Password?</a>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <button type="submit" class="btnform">Connect</button>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="menu2"></div>
+    </div>
+</section>

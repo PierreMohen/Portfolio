@@ -1,0 +1,111 @@
+section{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // border: #000 3px dotted;
+    background: linear-gradient(120deg,#000000,#0056ab,#000000);
+    // box-shadow: rgba( #000,0.5) 0px 10px 1rem;
+    box-shadow: 0px -6px 1rem rgba( #013162,1);
+    z-index: 50;
+}
+
+.title{
+    color: rgb(230, 231, 233);
+    width: auto;
+    min-height: 3%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(#0d85f5,0.4);
+    
+}
+
+.blurcontainer{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    filter: blur(10px);
+    width: 46%;
+    height: 32vh;
+    background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
+    background-size: 100% 100%;
+    transform: scale(1.8);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+    border: #000 solid 5px;
+}
+
+.container{
+
+    max-width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5%;
+    padding: auto 0%;
+    border: #fff 3px solid;
+    border-radius: 45px;
+    background:rgba(#0d85f5,0.2);
+    // background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 6;
+    // background-attachment:fixed;
+
+}
+
+.box{
+
+    max-width: 20%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    background: #1c467c;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    
+}
+
+.box img{
+    
+    width: 80%;
+    height: auto;
+}
+
+
+.text{
+    width: 80%;
+    height: auto;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // background: linear-gradient(to bottom,transparent,transparent,#da02cc);
+    // border: 3px solid #159202;
+}
+
+.text p{
+    color: rgb(208, 209, 209);
+    text-align:initial;
+    line-height: 1.3em;
+    word-spacing: 0.3em;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+}
