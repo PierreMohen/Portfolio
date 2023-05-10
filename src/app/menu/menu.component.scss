@@ -3,9 +3,20 @@
     color: azure;
     text-decoration: none;
 }    
+.fixed{
+    position: sticky;
+    width: 100%;
+    transition: 0.2s linear;
+    top: 0;
+}
+.nofixed{
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
+}
 
-    header{
-        position:sticky;  
+    .header{
+        // position:sticky;  
         box-sizing: border-box;
         min-width: 100%;
         min-height: 7vh;

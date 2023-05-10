@@ -1,4 +1,4 @@
-<header>
+<header (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'" class="header">
     <nav>
         <div ngClass="logo">Portfolio</div>
         <ul>
@@ -8,5 +8,3 @@
         
     </nav>
 </header>
-<script src="../menu/scroll.js">
-</script>
