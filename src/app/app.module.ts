@@ -8,6 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { Section1Component } from './section/section1/section1.component';
 import { Section2Component } from './section/section2/section2.component';
 import { Section3Component } from './section/section3/section3.component';
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+import { CapitalizeFirstLetterArrayPipe } from './pipes/capitalize-first-letter-array.pipe';
+import { HttpClientModule } from '@angular/common/http';
+import { ColorComponent } from './components/color/color.component';
+
+
 
 
 @NgModule({
@@ -18,13 +24,16 @@ import { Section3Component } from './section/section3/section3.component';
     Section1Component,
     Section2Component,
     Section3Component,
+    CapitalizeFirstLetterArrayPipe,
+    ColorComponent,  
     
-
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxHideOnScrollModule,
+    HttpClientModule,    
 
   ],
   providers: [],

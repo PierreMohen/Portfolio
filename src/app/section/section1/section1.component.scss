@@ -1,9 +1,9 @@
 section{
+    box-sizing: border-box;
+    position: relative;
     margin: 0;
     padding: 0;
-    position: relative;
-    box-sizing: border-box;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     left: 0;
     right: 0;
@@ -27,6 +27,7 @@ section{
     justify-content: center;
     align-items: center;
     background:rgba(#0d85f5,0.4);
+    opacity: 0;
     
 }
 
@@ -37,7 +38,7 @@ section{
     filter: blur(10px);
     width: 46%;
     height: 32vh;
-    background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
+    background-image: url("../../../assets/sky-1683016246880-3708.jpg");
     background-size: 100% 100%;
     transform: scale(1.8);
     background-repeat: no-repeat;
@@ -56,7 +57,7 @@ section{
     flex-direction: row;
     margin-bottom: 5%;
     padding: auto 0%;
-    border: #fff 3px solid;
+    // border: #fff 3px solid;
     border-radius: 45px;
     background:rgba(#0d85f5,0.2);
     // background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
@@ -77,17 +78,23 @@ section{
     justify-content: center;
     margin: 2%;
     background: #1c467c;
-    border: 3px solid #fff;
+    // border: 3px solid #fff;
     border-radius: 10px;
-    
+    // backdrop-filter: blur(20px);
+    transition: all 0.4s ease-out;    
 }
 
 .box img{
-    
+    object-fit: contain;
     width: 80%;
     height: auto;
+    border-radius: 5px;
 }
-
+ .box:hover{
+    transition: all 0.3s ease-in-out;
+    scale:125%;
+    margin: 6%;
+ }
 
 .text{
     width: 80%;

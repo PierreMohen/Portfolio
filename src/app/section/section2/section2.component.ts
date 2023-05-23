@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class Section2Component {
 
+  isActive: boolean = false
+  switchActive() {
+    console.log("toto")
+    this.isActive = !this.isActive
+  }
 }

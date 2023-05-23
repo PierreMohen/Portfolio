@@ -1,8 +1,13 @@
-<section>
+<section id="section2">
     <div class="title"><h1>section2 works!</h1></div>
 <div [ngClass]="{'container':true}">
     <div [ngClass]="{'image':true}">
     </div>
+    <!-- <div class="closed active"></div>
+    <div class="open"></div> -->
+
+    <div (click)="switchActive()" [ngClass]="!isActive ? 'closed active': 'open'">test</div>
+    <div (click)="switchActive()" [ngClass]="!isActive ? 'open active': 'closed'">closed</div>
     <div [ngClass]="{'text':true}">
         <h2>Title...</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perspiciatis impedit nostrum minima cupiditate repudiandae sit beatae officia quas, voluptatem deleniti iusto assumenda voluptatum quae eaque possimus. Harum, sapiente possimus.</p>
@@ -12,4 +17,5 @@
 </div>
 <p>section2 works!</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt optio adipisci temporibus assumenda qui animi maxime ut accusamus ducimus facilis? Omnis at sapiente itaque velit explicabo cupiditate earum saepe doloribus.</p>
+
 </section>

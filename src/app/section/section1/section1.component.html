@@ -1,13 +1,13 @@
-<section>
+<section id="section1">
     <div [ngClass]="{'title':'true'}">
         <h2>Section 1. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
     </div>
     <div class="blurcontainer"></div>
     <div [ngClass]="{'container':'true'}">
         <div [ngClass]="{'box':'true'}" *ngFor="let element of elements;let i;">
-            <h3>{{i}}</h3>
+            <h3>{{i|titlecase}}</h3>
             <!-- <div class="image"> -->
-            <img src="../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg" alt="">
+            <img src="../../../assets/sky-1683016246880-3708.jpg" alt="">
             <!-- </div> -->
             <div [ngClass]="{'text':'true'}">
                 <h3>Lorem ipsum dolor</h3>

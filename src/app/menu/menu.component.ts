@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Pipe ,PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,14 +8,26 @@ import { Component, HostListener } from '@angular/core';
 })
 export class MenuComponent {
 
-  menu=['home','works','about me','contact me'];
-  navbarfixed:boolean = false;
-  @HostListener('window:scroll',['$event']) onscroll(){
-    if(window.scrollY > 100){
-      this.navbarfixed = true;
-  }
-  else{
-    this.navbarfixed = false;
-  }
+  menu=[
+
+    {
+      name:'home',url:'#home'
+    },
+    {
+      name:'works', url:'#section3'
+    },
+    {
+      name:'about me', url:'#section2'
+    },
+    {
+      name:'contact me', url:'#section1'
+    },
+    
+    
+    ];
+ 
+
 }
-}
+
+
+

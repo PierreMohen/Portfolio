@@ -15,8 +15,8 @@
 .container{
     position: relative;
     width: 100%;
-    box-sizing: border-box;
     height: 86vh;
+    box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -38,19 +38,18 @@
     background-position: center right; 
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
-.container img{
-    // background-size: calc(100%-200px)
-    position: absolute;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    height: auto;
-    transform: scale(1.0);
+// .container img{
+//     // background-size: calc(100%-200px)
+//     position: absolute;
+//     left: 0;
+//     z-index: 10;
+//     width: 100%;
+//     height: auto;
+//     transform: scale(1.0);
 
-}
+// }
 
 // image{
 //     width: 60vh;
@@ -68,7 +67,7 @@
     margin-top: 0%;  
     padding: 0.8%;   
     background:linear-gradient(45deg,rgb(176, 132, 22),rgb(128, 13, 215),rgb(130, 11, 146)) ;
-    border: 3px solid rgb(88, 88, 88);
+    border: 3px solid rgb(75, 0, 129);
     border-radius: 10px;
     z-index: 11;
 }

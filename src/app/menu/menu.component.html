@@ -1,8 +1,8 @@
-<header (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'" class="header">
+<header ngxHideOnScroll [ngClass]="'nav--hidden'" id="menubar">
     <nav>
         <div ngClass="logo">Portfolio</div>
         <ul>
-            <li *ngFor="let element of menu;let i;"><a href="#">{{i}}</a></li>
+            <li  *ngFor="let element of menu"><a href={{element.url}}>{{element.name|titlecase}}</a></li>
         </ul>
        
         

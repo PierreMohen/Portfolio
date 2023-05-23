@@ -11,7 +11,7 @@
         height: auto;
         left: 0;
         background: linear-gradient(to bottom,#084382,#000000);
-        border: #fff 3px dotted;
+        // border: #fff 3px dotted;
         >.title{
             margin-bottom: 2%;
             background: transparent;
@@ -30,6 +30,7 @@
         
 
             >.image{
+                object-fit: contain;
                 width: 50%;
                 height: 85%;
                 margin: 0% 3%;
@@ -38,7 +39,7 @@
                 align-items: center;
                 background: #732b57;
                 border: 3px solid cyan;
-                background-image: url("../../../assets/Anime-4k-Wallpaper.jpg");
+                background-image: url("../../../assets/japan-1683016256821-2662.jpg");
                 background-position: center;
                 background-size: cover;
                 border-radius: 10px;
@@ -64,6 +65,29 @@
             }
             >.text h5{
                 padding-top: 3%;
+            }
+
+            >.closed{
+                position: absolute;
+                width: 10vh;
+                height: 10vh;
+                background: #eb0000e9;
+                display: none;
+                cursor: pointer;
+            }
+
+            >.open{
+                position: absolute;
+                width: 10vh;
+                height: 10vh;
+                background: #0d3688;
+                opacity: 0.5;
+                display: none;
+                cursor: pointer;
+            }
+
+            .active{
+                display: block;
             }
         }
     }

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class Section1Component {
 
-  elements =['Pierre','Paul','André'];
+  elements =['pierre','paul','andré'];
   color =true;
 }
