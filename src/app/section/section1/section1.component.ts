@@ -9,4 +9,6 @@ export class Section1Component {
 
   elements =['pierre','paul','andré'];
   color =true;
+
+   
 }

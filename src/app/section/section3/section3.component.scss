@@ -129,6 +129,8 @@ section{
 }
 
 .screen video{
+    object-fit: cover;
+    object-position: center;
     width: 100%;
     height: auto;
     border-radius: 35px;

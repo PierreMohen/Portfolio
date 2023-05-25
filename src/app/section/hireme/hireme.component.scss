@@ -1,0 +1,29 @@
+section{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #7e7e7e;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.img{
+    display: flex;
+}
+
+.img img{
+    width: 300px;
+}
+

@@ -35,16 +35,16 @@ section{
     display: flex;
     position: absolute;
     top: 30%;
-    filter: blur(10px);
+    // filter: blur(10px);
     width: 46%;
     height: 32vh;
-    background-image: url("../../../assets/sky-1683016246880-3708.jpg");
+    // background-image: url("../../../assets/Anime.jpg");
     background-size: 100% 100%;
     transform: scale(1.8);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 4;
-    border: #000 solid 5px;
+    // border: #000 solid 5px;
 }
 
 .container{
@@ -59,8 +59,9 @@ section{
     padding: auto 0%;
     // border: #fff 3px solid;
     border-radius: 45px;
-    background:rgba(#0d85f5,0.2);
-    // background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
+    // background:rgba(#0d85f5,0.2);
+    background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
+    
     background-size: cover;
     background-position: center;
     z-index: 6;
@@ -69,50 +70,65 @@ section{
 }
 
 .box{
-
-    max-width: 20%;
-    min-height: 40vh;
+    position: relative;
+    width: 320px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 2%;
-    background: #1c467c;
     // border: 3px solid #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     // backdrop-filter: blur(20px);
+    background:transparent;
     transition: all 0.4s ease-out;    
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
 }
 
-.box img{
-    object-fit: contain;
-    width: 80%;
-    height: auto;
-    border-radius: 5px;
-}
- .box:hover{
-    transition: all 0.3s ease-in-out;
-    scale:125%;
-    margin: 6%;
- }
-
-.text{
-    width: 80%;
-    height: auto;
-    margin-bottom: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    // background: linear-gradient(to bottom,transparent,transparent,#da02cc);
-    // border: 3px solid #159202;
+.box .poster{
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
 }
 
-.text p{
-    color: rgb(208, 209, 209);
-    text-align:initial;
-    line-height: 1.3em;
-    word-spacing: 0.3em;
-    letter-spacing: 0.2px;
-    font-size: 16px;
+.box .poster::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -180px;
+    background: linear-gradient(0deg,#0056ab 50%,transparent);
+    transition: 0.5s;
+    z-index: 10;
 }
+
+.box:hover .poster::before{
+    bottom: 0px;
+}
+
+.box .poster img{
+
+    max-width:105%;
+    max-height: 105%;
+    object-fit:cover;
+    object-position:center;
+    aspect-ratio: 1.25/1.9999;
+    transition: 0.5s;
+
+}
+.box:hover .poster img{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
+//  .box:hover{
+//     transition: all 0.3s ease-in-out;
+//     scale:125%;
+//     margin: 6%;
+//  }
+

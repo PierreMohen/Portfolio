@@ -1,19 +1,29 @@
 <section id="section2">
     <div class="title"><h1>section2 works!</h1></div>
 <div [ngClass]="{'container':true}">
-    <div [ngClass]="{'image':true}">
-    </div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="30s" values="0.002;0.005;0.02" repeatCount="indefinite"></animate>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="15"></feDisplacementMap>
+        </filter>
+    </svg>
+    <!-- <div [ngClass]="{'image':true}">
+    </div> -->
     <!-- <div class="closed active"></div>
     <div class="open"></div> -->
 
-    <div (click)="switchActive()" [ngClass]="!isActive ? 'closed active': 'open'">test</div>
+    <!-- <div (click)="switchActive()" [ngClass]="!isActive ? 'closed active': 'open'">test</div>
     <div (click)="switchActive()" [ngClass]="!isActive ? 'open active': 'closed'">closed</div>
     <div [ngClass]="{'text':true}">
         <h2>Title...</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perspiciatis impedit nostrum minima cupiditate repudiandae sit beatae officia quas, voluptatem deleniti iusto assumenda voluptatum quae eaque possimus. Harum, sapiente possimus.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima inventore perspiciatis unde repellat sit adipisci dolorem vitae pariatur ipsum. Vel repellendus iure labore deserunt eveniet in sunt neque hic at.</p>
         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-    </div>
+    </div> -->
 </div>
 <p>section2 works!</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt optio adipisci temporibus assumenda qui animi maxime ut accusamus ducimus facilis? Omnis at sapiente itaque velit explicabo cupiditate earum saepe doloribus.</p>

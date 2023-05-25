@@ -12,6 +12,8 @@ import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 import { CapitalizeFirstLetterArrayPipe } from './pipes/capitalize-first-letter-array.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { ColorComponent } from './components/color/color.component';
+import { HiremeComponent } from './section/hireme/hireme.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -25,7 +27,9 @@ import { ColorComponent } from './components/color/color.component';
     Section2Component,
     Section3Component,
     CapitalizeFirstLetterArrayPipe,
-    ColorComponent,  
+    ColorComponent,
+    HiremeComponent,
+    FooterComponent,  
     
 
   ],
