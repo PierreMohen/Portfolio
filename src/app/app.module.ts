@@ -14,7 +14,11 @@ import { ColorComponent } from './components/color/color.component';
 import { SectionfeedbackComponent } from './section/sectionfeedback/sectionfeedback.component';
 import { FooterComponent } from './footer/footer.component';
 import { EvaIconComponent } from 'ng-eva-icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 // import { ScrollToModule } from 'ngx-scroll-to';
+library.add(faCoffee);
 
 @NgModule({
   declarations: [
@@ -38,6 +42,7 @@ import { EvaIconComponent } from 'ng-eva-icon';
     AppRoutingModule,
     NgxHideOnScrollModule,
     HttpClientModule,
+    FontAwesomeModule,
     
 
   ],
