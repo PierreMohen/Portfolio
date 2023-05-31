@@ -11,14 +11,15 @@ export class Section3Component implements OnInit{
 
   constructor(private readonly _customer:CustomerService){}
 
-  menu: { name: string; bouton: string; }[] =[
+  menu: { name: string; bouton: string; open:boolean }[] =[
 
-    {name:'home', bouton:'button1'},
-    {name:'login', bouton:'button2'},
-    {name:'city',  bouton:'button3'},
-    {name:'cars', bouton:'button4'},
+    {name:'home', bouton:'button1', open:false},
+    {name:'login', bouton:'button2', open:false},
+    {name:'city',  bouton:'button3', open:false},
+    {name:'cars', bouton:'button4', open:false},
   
   ];
+
   icon=['icon1'];
   submenu=['item1','item2','item3'];
 

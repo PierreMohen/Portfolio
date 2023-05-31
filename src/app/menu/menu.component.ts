@@ -26,8 +26,11 @@ export class MenuComponent {
     
     ];
  
+    isMenuBarVisible: boolean = false;
 
+    @HostListener('window:scroll', [])
+    onWindowScroll() {
+      this.isMenuBarVisible = window.pageYOffset > 0;
 }
 
-
-
+}

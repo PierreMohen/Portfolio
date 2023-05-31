@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -12,11 +11,10 @@ import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 import { CapitalizeFirstLetterArrayPipe } from './pipes/capitalize-first-letter-array.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { ColorComponent } from './components/color/color.component';
-import { HiremeComponent } from './section/hireme/hireme.component';
+import { SectionfeedbackComponent } from './section/sectionfeedback/sectionfeedback.component';
 import { FooterComponent } from './footer/footer.component';
-
-
-
+import { EvaIconComponent } from 'ng-eva-icon';
+// import { ScrollToModule } from 'ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -28,16 +26,19 @@ import { FooterComponent } from './footer/footer.component';
     Section3Component,
     CapitalizeFirstLetterArrayPipe,
     ColorComponent,
-    HiremeComponent,
-    FooterComponent,  
+    SectionfeedbackComponent,
+    FooterComponent,
     
-
+    
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxHideOnScrollModule,
-    HttpClientModule,    
+    HttpClientModule,
+    
 
   ],
   providers: [],

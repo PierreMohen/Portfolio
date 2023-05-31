@@ -4,7 +4,8 @@ section{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
+    top: 0;
     left: 0;
     right: 0;
     display:flex;
@@ -19,36 +20,22 @@ section{
 }
 
 .title{
-    color: rgb(230, 231, 233);
-    width: auto;
-    min-height: 3%;
-    margin-bottom: 2%;
     display: flex;
+    width: auto;
+    height: 3%;
+
+    margin-top: 4%;
     justify-content: center;
     align-items: center;
-    background:rgba(#0d85f5,0.4);
-    opacity: 0;
+    color: rgb(230, 231, 233);
+    // background:rgba(#0d85f5,0.4);
+    opacity: 1;
+    z-index: 7;
     
 }
 
-.blurcontainer{
-    display: flex;
-    position: absolute;
-    top: 30%;
-    // filter: blur(10px);
-    width: 46%;
-    height: 32vh;
-    // background-image: url("../../../assets/Anime.jpg");
-    background-size: 100% 100%;
-    transform: scale(1.8);
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 4;
-    // border: #000 solid 5px;
-}
-
 .container{
-
+    position: relative;
     max-width: 85%;
     height: auto;
     display: flex;
@@ -60,13 +47,30 @@ section{
     // border: #fff 3px solid;
     border-radius: 45px;
     // background:rgba(#0d85f5,0.2);
-    background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
+    // background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
     
     background-size: cover;
     background-position: center;
     z-index: 6;
     // background-attachment:fixed;
 
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background: rgba(#0d85f5,0.2);
+    // background-image: url("../../../assets/landscape-1683016223552-1032.jpg");
+    // background: #000;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    border-radius: 45px;
+    z-index: 7;
 }
 
 .box{
@@ -78,7 +82,7 @@ section{
     align-items: center;
     justify-content: center;
     margin: 2%;
-    // border: 3px solid #fff;
+    border: 2px solid #7807da;
     border-radius: 20px;
     // backdrop-filter: blur(20px);
     background:transparent;
@@ -94,6 +98,7 @@ section{
     overflow: hidden;
     width: 100%;
     height: 450px;
+    z-index: 8;
 }
 
 .box .poster::before{
@@ -132,3 +137,19 @@ section{
 //     margin: 6%;
 //  }
 
+.details{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10%;
+    color: aliceblue;
+    z-index: 11;
+    transition: 0.5s;
+    border-top: #000000 3px solid;
+    
+}
+
+.details:hover{
+    bottom: 40px;
+}

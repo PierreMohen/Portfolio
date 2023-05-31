@@ -15,10 +15,35 @@
 //     top: -50px;
 // }
 
-    header{
+    // header{
+    //     position: fixed;
+    //     box-sizing: border-box;
+    //     width: 98.9%;
+    //     height: 7vh;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    //     align-items: center;
+
+    //     top: 0;
+    //     left: 0;
+    //     margin-left: 0.55%;
+        
+    //     padding: 0;
+    //     // background: linear-gradient(to bottom,#003474,#1656a4);
+    //     background: linear-gradient(to top,#003474,#1656a4,#013162);
+    //     border-bottom: 3px solid blueviolet;
+    //     // box-shadow: rgba( #000,0.5) 0.3px 0.5px 10px;
+    //     box-shadow: 0px 6px 1rem #013162;
+    //     z-index: 60;
+    //     // transition: all 0.7s;
+    // }
+    header.nav--hidden {
+        // transform: translateY(-100%);
+        transition: 0.6s;
         position: fixed;
         box-sizing: border-box;
-        width: 98.9%;
+        width: 98.8%;
         height: 7vh;
         display: flex;
         flex-wrap: wrap;
@@ -30,18 +55,15 @@
         margin-left: 0.55%;
         
         padding: 0;
-        // background: linear-gradient(to bottom,#003474,#1656a4);
         background: linear-gradient(to top,#003474,#1656a4,#013162);
-        border-bottom: 3px solid blueviolet;
+        // background: transparent;
+        backdrop-filter: blur(10px);
+        border-bottom: 3px solid rgba(137, 43, 226, 0.636);
         // box-shadow: rgba( #000,0.5) 0.3px 0.5px 10px;
         box-shadow: 0px 6px 1rem #013162;
         z-index: 60;
-        // transition: all 0.7s;
-    }
-    header.nav--hidden {
-        transform: translateY(-100%);
-        transition: 0.6s;
       }
+    
 
         nav{
             position: absolute;
@@ -127,10 +149,14 @@
             }
 
 
-    @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
-
+    /* For Tablet View */
+@media screen and (min-width: 768px)
+and (max-width: 1024px) {
+    .header.nav--hidden{
+        background: #017b62;
     }
+
+}
 
 
     @media screen and (max-device-width: 640px) and (orientation: landscape) {

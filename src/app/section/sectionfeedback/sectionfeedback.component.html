@@ -46,6 +46,6 @@
     </div>
 
     <div class="img">
-        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" >
+      <img *ngFor="let image of images" class="slider-image" [src]="image" alt="Slider Image">
     </div>
 </section>

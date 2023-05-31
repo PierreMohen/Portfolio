@@ -1,15 +1,18 @@
 
 section{
-    box-sizing: border-box;
     position: relative;
     display: flex;
+    width: 100%;
+    height: 110vh;
+    
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     top: 0;
     left: 0;
-    width: 100%;
-    height: 110vh;
+    
     background: linear-gradient(-45deg,black,rgb(203, 19, 19),#3701b4,rgb(92, 0, 184),rgb(203, 19, 19),black);
     border: 3px solid rgb(38, 38, 38);
     animation: bganimation 20s forwards ease-in;
@@ -23,26 +26,26 @@ section{
 }
 
 .title{
-    background: none;
     color: rgba(235, 235, 235, 0.903);
+    background: none;
     -webkit-text-stroke: transparent;
     -webkit-text-fill-color: currentColor;
 }
 
 .container{
     position: relative;
-    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
     min-width: 100%;
     height: auto;
+    box-sizing: border-box;
+    flex-direction: row;
 
 }
 
 .menu ul{
     // background: #685c5c;
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     flex-direction: column;
     margin-left: 45%;
         
@@ -50,89 +53,97 @@ section{
 
 .menu ul li{
     width: auto;
-    background: #3a0e0e;
-    border-bottom : 3px solid #f48282;
-    border-left : 3px solid #f48282;
-    border-top : 3px solid #f48282;
     cursor: pointer;
+    
     padding: 5% 35%;
     margin-top: 15%;
     margin-bottom: -5%;
+    
+    background: #3a0e0e;
+    border-top : 3px solid #f48282;
+    border-left : 3px solid #f48282;
+    border-bottom : 3px solid #f48282;
     border-radius: 15px 0px 0px 15px;
     transition:all 1s;
 }
 
 .menu ul li:hover{
-    background: #d77e02;
     color: #000;
-    transition: all 0.5s;
+    background: #d77e02;
     // box-shadow: 2px 2px 3px rgba(#000000,0.5);
     box-shadow: inset 0px 0px 1px rgba(#000000,0.5);
+    transition: all 0.5s;
 }
 
 .menu{
-    box-sizing: border-box;
-    color: whitesmoke;
     display: flex;
-    flex-direction: column;
-    border: 0px solid #000;
+    box-sizing: border-box;
     min-width: 17%;
     height: 90.2vh;
-    z-index: 6;
+    flex-direction: column;
+    color: whitesmoke;
+    
+    top: 0;
     left: 0;
-    top: 0s;
+    
     background: linear-gradient(120deg,rgb(92, 0, 184)45deg,rgb(154, 5, 5),#840808,black);
     filter: blur(0px);
+    border: 0px solid #000;
     box-shadow: 0px 0px 0px rgba(#840808,0.6);
     opacity: 0.9;
+    z-index: 6;
 }
 
 .menu2{
     box-sizing: border-box;
-    border: 0px solid #000;
-    top: 0;
-    left: 0;
     min-width: 17% ;
     height: 89.5vh;
-    background: linear-gradient(120deg,rgb(92, 0, 184)45deg,rgb(154, 5, 5),#840808,black);
+    top: 0;
+    left: 0;
+
     filter: blur(0px);
-    z-index: 7;
+    background: linear-gradient(120deg,rgb(92, 0, 184)45deg,rgb(154, 5, 5),#840808,black);
     box-shadow: 0px 0px 0px rgba( #840808,0.6);
+    border: 0px solid #000;
+    z-index: 7;
 }
 
 .screen{
     position: relative;
-    box-sizing: border-box;
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    
     width: 180vh;
-    height: 77.5vh;
+    height: 77.4vh;
+
     top: 0;
     left: 0;
-    border: 3px solid #f48282;
     margin: 0%;
     padding: 0%;
     // background-image:url("../../../assets/708643.jpg");
     // background-size: cover;
     // background-position: center;
+    border: 3px solid #f48282;
     border-radius: 37px;
 }
 .screen img{
-    object-fit: cover;
     position: absolute;
     width: 100%;
     height: 77vh;
+    object-fit: cover;
     top: 0;
     border-radius: 35px;
     opacity: 1;
 }
 
 .screen video{
+    position: absolute;
+    width: 100%;
+    height: 76.7vh;
     object-fit: cover;
     object-position: center;
-    width: 100%;
-    height: auto;
     border-radius: 35px;
     
 }
@@ -142,31 +153,51 @@ section{
 }
 
 
-.login{
-    box-sizing: border-box;
+.home{
     position: absolute;
     display: flex;
+    width: 350px;
+    height: 76.7vh;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 0.2%;
+
+    top: 0.19%;
     left: 0;
-    color: whitesmoke;
-    width: 350px;
-    height: 76.7vh;
     padding-left: 2%;
     padding-right: 2%;
     margin: 0%;
+
+    color: whitesmoke;
+    background: #8202d89f;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.852);
+    border-radius: 35px 0px 0px 35px;
+    // transition: transform 3s;
+    transition: 1s ease-in-out;
+}
+.login{
+    position: absolute;
+    display: flex;
+    width: 350px;
+    height: 76.7vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 0.19%;
+    left: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0%;
+
+    color: whitesmoke;
     background: #4949499f;
     border-radius: 35px 0px 0px 35px;
-    transition: transform 3s;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.852);
+    transition: transform 3s;
 }
-// .hidden{
-//     transform: translateX(-360px);
-//     transition: transform 2.5s;
-//     opacity: 0;
-// }
 
 .login h1{
     
@@ -182,9 +213,9 @@ section{
     position: absolute ;
     font-size: 15px;
     top: 20%;
+    margin: 0% 5%;
     text-align: center;
     justify-content: center;
-    margin: 0% 5%;
     
 }
 
@@ -193,26 +224,21 @@ section{
     // pointer-events: none;
     width: 265px;
     height: 30px;
-    background: transparent;
-    border: none;
     font-size: 1em;
+    border: none;
+    background: transparent;
     transform: translateY(0%);
     transition: 0.5s;
 }
-
-// input:focus ~ label,
-// input:focus ~ :valid{
-//     top: -5px;
-// }
 
 .pw{
     outline: none;
     // pointer-events: none;
     width: 265px;
     height: 30px;
+    font-size: 1em;
     background: transparent;
     border: none;
-    font-size: 1em;
 }
 
 
@@ -222,9 +248,9 @@ table{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     margin-top: 25%;
     margin-bottom: 0%;
-    // border: #000 3px solid;
     
 }
 
@@ -236,32 +262,50 @@ table{
 }
 
 .connection{
-    width: 280px;
     display: flex;
+    width: 280px;
     justify-content: space-between;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
     margin-top: 10%;
-    // border: 3px solid #07cd46;
 }
 
 .connectiona{
-    width: auto;
     display: flex;
+    width: auto;
+    font-size: 15px;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    font-size: 15px;
-    // margin-right: 0%;
-    // border: 3px solid #cf7b0c;
    
 }
 
 .connectionb{
-    margin-left: 0%;
     font-size: 14px;
+    margin-left: 0%;
+}
 
-    // border: 3px solid #cf7b0c;
+#elselog{
+    position: absolute;
+    display: flex;
+    width: 350px;
+    height: 76.7vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 0.19%;
+    left: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0%;
+
+    color: whitesmoke;
+    background: #4949499f;
+    border-radius: 35px 0px 0px 35px;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.852);
+    transition: transform 3s;
 }
 
 .btnform{
@@ -270,19 +314,21 @@ table{
 }
 
 .submenu{
-    box-sizing: border-box;
     position: absolute;
-    flex-direction: column;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 20%;
     height: 199px;
-    background: #fbfbfb20;
+
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     top: 0;
     left: 0;
+
+    background: #fbfbfb20;
     border-radius: 14.8% 0% 14.8% 0%;
-    // border: 3px solid #f48282;
     border-bottom: 3px solid #f48282;
     border-right: 3px solid #f48282;
     opacity: 0;
@@ -290,23 +336,25 @@ table{
 
 .submenu ul{
     position: absolute;
-    top : 0;
-    left: 0;
+    display: flex;
     width: auto;
     height: auto;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    top : 0;
+    left: 0;
+
     list-style-type: none;
 }
 
 .submenu ul a li{
-    border: #3701b4 2px solid;
+    width: auto;
     padding: 10% 0%;
     margin-top: 35%;
     margin-bottom: 0%;
-    width: auto;
+    border: #3701b4 2px solid;
 
 }
 
@@ -316,8 +364,10 @@ table{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     top: 0%;
     left: 0%;
+
     color: whitesmoke;
     z-index: 1000;
 }

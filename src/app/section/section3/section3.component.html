@@ -6,12 +6,13 @@
     <div class="container">
         <div class="menu">
             <ul>
-                <li  *ngFor="let element of menu" (click)="selectButton(element.bouton)"><a>{{element.name|titlecase}}</a></li>
+                <li  *ngFor="let element of menu" (click)="element.open = !element.open"><a>{{element.name|titlecase}}</a></li>
             </ul>   
         </div>
+        
         <div class="screen">
             <video controls autoplay [muted]="true" frameborder="0"loop >
-                <source src="../../../assets/Forgotten Friends [Assetto Corsa Cinematic].mp4" type="video/mp4" >
+                <source src="../../../assets/AMV _ Beautiful High Quality Anime Scenes(720p).mp4" type="video/mp4" >
                 Your browser does not support the video tag.
             </video>
             <!-- <img src="../../../assets/708643.jpg" alt=""> -->
@@ -22,13 +23,13 @@
             </div>
             <div *ngFor="let element of donnees" ngClass="fetchdata">
                 <h1>{{element.lastName}}</h1>
-            
+                
             </div>
-            
-            <div class="login " *ngIf="selectedButton === 'button2'">
-                <h1>Login &nbsp;Account</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem qui sunt saepe odit illo sit.</p>
-                <form> 
+            <ng-container class="divtest" *ngFor="let element of menu">
+                <div class="login " *ngIf="element.open && element.name ==='login'">
+                    <h1>Login &nbsp;Account</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem qui sunt saepe odit illo sit.</p>
+                    <form> 
                     <table>
                         <tr class="tr"> 
                             <input class="email" type="email" name="email" id="email" placeholder="Email" required>
@@ -53,19 +54,28 @@
                         </tr>
 
                     </table>
-                </form>
-            </div>
+                    </form>
+                </div>
             
-            <div class="home" *ngIf="selectedButton === 'button1'">
-            </div>
+                <div class="home" *ngIf="element.open && element.name ==='home'">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam necessitatibus voluptatem similique praesentium maiores aspernatur adipisci quibusdam, ratione illo quidem debitis vel nihil, temporibus rerum excepturi id autem sapiente! Home</p>
+                </div>
             
-            <div class="city" *ngIf="selectedButton === 'button3'">
-            </div>
-            <div class="cars" *ngIf="selectedButton === 'button4'">
+                <div class="city" *ngIf="selectedButton === 'button3'">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt earum esse omnis officiis nobis veniam accusamus provident, voluptatibus ad quibusdam distinctio sit sunt quidem! Magni deleniti commodi molestias eveniet possimus! CITY</p>
+                </div>
+                <div class="cars" *ngIf="selectedButton === 'button4'">
                 
-            </div>
-            
-        </div>
+                </div>
+
+                <div id="elselog" *ngIf="!element.open">
+                
+                    SALUTTTTTTTTTTTT
+                    
+                </div>
+
+            </ng-container>
+    </div>
         <div class="menu2"></div>
     </div>
 </section>
