@@ -9,6 +9,7 @@ import { SectionfeedbackComponent } from './section/sectionfeedback/sectionfeedb
 import { FooterComponent } from './footer/footer.component';
 
 
+
 const routes: Routes = [
   { path: 'home', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },

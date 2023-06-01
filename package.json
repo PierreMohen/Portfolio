@@ -19,12 +19,15 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@fortawesome/angular-fontawesome": "~0.12.1",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fullpage/angular-fullpage": "^0.0.16",
     "@ngxs/store": "^3.8.0-dev.master-fb273e5",
     "eva-icons": "^1.1.3",
     "ng-eva-icon": "^0.0.6",
     "ngx-hide-on-scroll": "^0.2.1",
-    "ngx-scroll-to-top": "^1.1.0",
+    
     
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
