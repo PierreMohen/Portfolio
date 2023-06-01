@@ -7,15 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionfeedbackComponent implements OnInit {
   images: string[] = [
-    '../../../assets/wallpaperflare.com_wallpaper (1).jpg',
-    '../../../assets/wallpaperflare.com_wallpaper (2).jpg',
-    '../../../assets/wallpaperflare.com_wallpaper.jpg'
+    '../../../assets/pictures/wallpaperflare.com_wallpaper (1).jpg',
+    '../../../assets/pictures/wallpaperflare.com_wallpaper (2).jpg',
+    '../../../assets/pictures/wallpaperflare.com_wallpaper.jpg'
   ];
-  currentIndex: number = 0;
+  currentIndex = 0;
+  interval: any;
 
   ngOnInit() {
-    setInterval(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.images.length;
-    }, 5000); // Adjust the interval duration (in milliseconds) as needed
+    this.startSlider();
+  }
+
+  startSlider() {
+    this.interval = setInterval(() => {
+      this.nextSlide();
+    }, 3000);
+  }
+
+  pauseSlider() {
+    clearInterval(this.interval);
+  }
+
+  previousSlide() {
+    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+  }
+
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.images.length;
   }
 }
+//   currentIndex: number = 0;
+
+//   ngOnInit() {
+//     setInterval(() => {
+//       this.currentIndex = (this.currentIndex + 1) % this.images.length;
+//     }, 5000); // Adjust the interval duration (in milliseconds) as needed
+//   }
+// }

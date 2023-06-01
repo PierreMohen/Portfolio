@@ -180,13 +180,13 @@ section{
     position: absolute;
     display: flex;
     width: 350px;
-    height: 76.7vh;
+    height: 100%;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    top: 0.19%;
+    top: 0;
     left: 0;
     padding-left: 2%;
     padding-right: 2%;
@@ -289,13 +289,13 @@ table{
     position: absolute;
     display: flex;
     width: 350px;
-    height: 76.7vh;
+    height: 100%;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    top: 0.19%;
+    top: 0;
     left: 0;
     padding-left: 2%;
     padding-right: 2%;

@@ -47,7 +47,7 @@ section{
     // border: #fff 3px solid;
     border-radius: 45px;
     // background:rgba(#0d85f5,0.2);
-    // background-image: url("../../../assets/wp5164538-parallax-anime-4k-wallpapers.jpg");
+    // background-image: url("../../../assets/pictures/wp5164538-parallax-anime-4k-wallpapers.jpg");
     
     background-size: cover;
     background-position: center;
@@ -64,7 +64,7 @@ section{
     right: 0;
     bottom: 0;
     // background: rgba(#0d85f5,0.2);
-    // background-image: url("../../../assets/landscape-1683016223552-1032.jpg");
+    // background-image: url("../../../assets/pictures/landscape-1683016223552-1032.jpg");
     // background: #000;
     background-size: cover;
     background-position: center;
@@ -139,17 +139,90 @@ section{
 
 .details{
     position: absolute;
-    width: 100%;
-    bottom: 0;
+    display: flex;
+    width: 80%;
+    height: 87%;
+   
+    
+    flex-direction: column;
+    
+    bottom: -53%;
     left: 0;
-    padding: 10%;
+    padding-inline: 10%;
+    padding-top: 113%;
+    padding-bottom: 0%;
+    
     color: aliceblue;
-    z-index: 11;
-    transition: 0.5s;
     border-top: #000000 3px solid;
+    transition: 0.5s;
+    z-index: 11;
+    
+}
+
+.title0{
+    position: absolute;
+    top:38%;
     
 }
 
 .details:hover{
-    bottom: 40px;
+    bottom: 0px;
+}
+
+.subtitle{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-inline: 2%;
+    border: 2px solid aliceblue;
+}
+
+.pics{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    // border: #000 2px solid;
+}
+
+.pics h4{
+    color: aliceblue;
+    margin-top: 2%;
+}
+
+.pics ul{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    left: 0;
+    top: 0;
+    margin-top: 0%;
+    padding:0;
+    // border: 2px solid #f50202;
+} 
+
+.pics ul li{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    
+    left: 0;
+
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+}
+
+.pics ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top;
 }

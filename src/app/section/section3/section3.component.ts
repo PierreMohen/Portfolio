@@ -40,5 +40,9 @@ export class Section3Component implements OnInit{
        
       });
   }
-    
+  allClosed(): boolean {
+
+    return this.menu.every(element => !element.open);
+
+}
   }
