@@ -14,13 +14,13 @@ export class MenuComponent {
       name:'home',url:'#home'
     },
     {
+      name:'about me', url:'#section1'
+    },
+    {
       name:'works', url:'#section3'
     },
     {
-      name:'about me', url:'#section2'
-    },
-    {
-      name:'contact me', url:'#section1'
+      name:'contact me', url:'#footer'
     },
     
     

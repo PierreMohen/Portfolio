@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./section1.component.scss']
 })
 export class Section1Component {
-
-  elements =['pierre','paul','andré'];
-  color =true;
-
   
 }
