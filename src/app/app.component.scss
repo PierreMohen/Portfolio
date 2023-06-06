@@ -36,13 +36,14 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    height: auto;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
 
     overflow-y:scroll;
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     // height: 500vh; 
   }
   .container::-webkit-scrollbar {
@@ -58,12 +59,12 @@ body{
     background-color: transparent;
   }
 
-  .section9{
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    // height: 100vh; 
+  // .section9{
+  //   scroll-snap-align: start;
+  //   scroll-snap-stop: always;
+  //   // height: 100vh; 
   
-  }
+  // }
   // app-menu,
   // app-home,
   // app-section1,

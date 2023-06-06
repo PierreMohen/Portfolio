@@ -6,60 +6,69 @@
     <div class="container">
         <div class="menu">
             <ul>
-                <li  *ngFor="let element of menu" (click)="element.open = !element.open"><a>{{element.name|titlecase}}</a></li>
+                <li><button class="allbutton" *ngFor="let menuItem of menu" (click)="toggleAnimation(menuItem)" [class.active]="menuItem.state === 'end'">
+                    {{ menuItem.name }}
+                </button></li>
+                <!-- <button *ngFor="let element of menu" (click)="startAnimation(divs[0]);selectButton(element.button)">{{element.name|titlecase}}</button> -->
             </ul>   
         </div>
-        
         <div class="screen">
+
             <video controls autoplay [muted]="true" frameborder="0"loop >
                 <source src="../../../assets/pictures/AMV _ Beautiful High Quality Anime Scenes(720p).mp4" type="video/mp4" >
                 Your browser does not support the video tag.
             </video>
             <!-- <img src="../../../assets/708643.jpg" alt=""> -->
-            <div class="submenu">
-                <ul>
-                    <a href="#"><li *ngFor="let element of submenu ;let i;">{{i}}</li></a>
-                </ul>  
-            </div>
+           
+
             <div *ngFor="let element of donnees" ngClass="fetchdata">
                 <h1>{{element.lastName}}</h1>
                 
             </div>
-            <ng-container class="divtest" *ngFor="let element of menu">
-                <div class="login " *ngIf="element.open && element.name ==='login'">
-                    <h1>Login &nbsp;Account</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem qui sunt saepe odit illo sit.</p>
-                    <form> 
-                    <table>
-                        <tr class="tr"> 
-                            <input class="email" type="email" name="email" id="email" placeholder="Email" required>
-                        </tr>
-                        
-                        <tr class="tr">
-                            <input class="pw" type="password" name="password" id="password" placeholder="Password" required>       
-                        </tr>
-                        
-                        <tr>
-                            <div class="connection">
-                                <div class="connectiona">
-                                    <input type="checkbox" name="" id="">Stay connected?
-                                </div>
-                                <div class="connectionb">
-                                    <a>Forgot Password?</a>
-                                </div>
-                            </div>
-                        </tr>
-                        <tr>
-                            <button type="submit" class="btnform">Connect</button>
-                        </tr>
 
-                    </table>
+            <!-- animated-div containing the login -->
+            <div class="login" *ngFor="let menuItem of menu" [@slideAnimation]="menuItem.state" class="animated-div" >
+                
+                    <h1>Login &nbsp;Account</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem qui sunt saepe odit illo sit.</p>
+                    <form> 
+                        <table>
+                            <tr class="tr"> 
+                                <input class="email" type="email" name="email" id="email" placeholder="Email" required>
+                            </tr>
+                        
+                            <tr class="tr">
+                                <input class="pw" type="password" name="password" id="password" placeholder="Password" required>       
+                            </tr>
+                        
+                            <tr>
+                                <div class="connection">
+                                    <div class="connectiona">
+                                        <input type="checkbox" name="" id="">Stay connected?
+                                    </div>
+
+                                    <div class="connectionb">
+                                        <a>Forgot Password?</a>
+                                    </div>
+                                </div>
+                            </tr>
+
+                            <tr>
+                                <button type="submit" class="btnform">Connect</button>
+                            </tr>
+
+                        </table>
                     </form>
-                </div>
+                
+            </div>
+            <!-- end of the animated div login -->
+
+
+
             
-                <div class="home" *ngIf="element.open && element.name ==='home'">
+                <!-- <div class="home" >
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam necessitatibus voluptatem similique praesentium maiores aspernatur adipisci quibusdam, ratione illo quidem debitis vel nihil, temporibus rerum excepturi id autem sapiente! Home</p>
-                </div>
+                </div> -->
             
                 <div class="city" *ngIf="selectedButton === 'button3'">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt earum esse omnis officiis nobis veniam accusamus provident, voluptatibus ad quibusdam distinctio sit sunt quidem! Magni deleniti commodi molestias eveniet possimus! CITY</p>
@@ -67,15 +76,6 @@
                 <div class="cars" *ngIf="selectedButton === 'button4'">
                 
                 </div>
-
-                <div id="elselog" *ngIf="allClosed()">
-
-                    SALUTTTTTTTTTTTT
-
-                </div>
-
-            </ng-container>
     </div>
-        <div class="menu2"></div>
     </div>
 </section>

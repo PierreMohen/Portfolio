@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ColorComponent } from './components/color/color.component';
 import { SectionfeedbackComponent } from './section/sectionfeedback/sectionfeedback.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { ScrollToModule } from 'ngx-scroll-to';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -42,7 +43,7 @@ library.add(faCoffee);
     NgxHideOnScrollModule,
     HttpClientModule,
     FontAwesomeModule,
-    
+    BrowserAnimationsModule,
 
   ],
   providers: [],

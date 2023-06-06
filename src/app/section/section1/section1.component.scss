@@ -1,20 +1,21 @@
 section{
-    box-sizing: border-box;
     position: relative;
-    margin: 0;
-    padding: 0;
+    display:flex;
     width: 100%;
     height: 100vh;
+
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+    margin: 0;
+    padding: 0;
     top: 0;
     left: 0;
     right: 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    // border: #000 3px dotted;
+    
     background: linear-gradient(120deg,#000000,#0056ab,#000000);
-    // box-shadow: rgba( #000,0.5) 0px 10px 1rem;
     box-shadow: 0px -6px 1rem rgba( #013162,1);
     z-index: 50;
 }
@@ -28,7 +29,7 @@ section{
     justify-content: center;
     align-items: center;
     color: rgb(230, 231, 233);
-    // background:rgba(#0d85f5,0.4);
+
     opacity: 1;
     z-index: 7;
     
@@ -36,23 +37,21 @@ section{
 
 .container{
     position: relative;
-    max-width: 85%;
-    height: auto;
     display: flex;
+    width: 85%;
+    height: auto;
+    
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    
     margin-bottom: 5%;
     padding: auto 0%;
-    // border: #fff 3px solid;
-    border-radius: 45px;
-    // background:rgba(#0d85f5,0.2);
-    // background-image: url("../../../assets/pictures/wp5164538-parallax-anime-4k-wallpapers.jpg");
     
     background-size: cover;
     background-position: center;
+    border-radius: 45px;
     z-index: 6;
-    // background-attachment:fixed;
 
 }
 
@@ -63,41 +62,45 @@ section{
     left: 0;
     right: 0;
     bottom: 0;
-    // background: rgba(#0d85f5,0.2);
-    // background-image: url("../../../assets/pictures/landscape-1683016223552-1032.jpg");
-    // background: #000;
+    
     background-size: cover;
     background-position: center;
     filter: blur(2px);
+
     border-radius: 45px;
     z-index: 7;
 }
 
 .box{
     position: relative;
+    display: flex;
     width: 320px;
     height: 450px;
-    display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     margin: 2%;
+    
+    background:transparent;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
     border: 2px solid #7807da;
     border-radius: 20px;
-    // backdrop-filter: blur(20px);
-    background:transparent;
     transition: all 0.4s ease-out;    
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
 }
 
 .box .poster{
     position: relative;
-    top: 0;
-    left: 0;
-    overflow: hidden;
     width: 100%;
     height: 450px;
+    
+    top: 0;
+    left: 0;
+    
+    overflow: hidden;
     z-index: 8;
 }
 
@@ -106,6 +109,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
+    
     bottom: -180px;
     background: linear-gradient(0deg,#0056ab 50%,transparent);
     transition: 0.5s;
@@ -118,24 +122,21 @@ section{
 
 .box .poster img{
 
-    max-width:105%;
-    max-height: 105%;
+    width:105%;
+    height: 105%;
+    
     object-fit:cover;
     object-position:center;
     aspect-ratio: 1.25/1.9999;
+    
     transition: 0.5s;
 
 }
+
 .box:hover .poster img{
     transform: translateY(-50px);
     filter: blur(5px);
 }
-
-//  .box:hover{
-//     transition: all 0.3s ease-in-out;
-//     scale:125%;
-//     margin: 6%;
-//  }
 
 .details{
     position: absolute;
@@ -181,10 +182,11 @@ section{
     display: flex;
     width: 100%;
     height: auto;
+
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    // border: #000 2px solid;
+    
 }
 
 .pics h4{
@@ -197,14 +199,16 @@ section{
     display: flex;
     width: 100%;
     height: 100%;
+
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    
     left: 0;
     top: 0;
     margin-top: 0%;
     padding:0;
-    // border: 2px solid #f50202;
+    
 } 
 
 .pics ul li{

@@ -7,7 +7,7 @@ import { Section2Component } from './section/section2/section2.component';
 import { Section3Component } from './section/section3/section3.component';
 import { SectionfeedbackComponent } from './section/sectionfeedback/sectionfeedback.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const routes: Routes = [
@@ -23,7 +23,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+  BrowserAnimationsModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
