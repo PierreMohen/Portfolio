@@ -1,8 +1,7 @@
 <section id="section3">
-    <div class="title">
-        <h1>Section 3 Rent Me!</h1>
+    <div class="title01">
+        <h2>Section 3. Rent Me!</h2>
     </div>
-    
     <div class="container">
         <div class="menu">
             <ul>
@@ -26,7 +25,7 @@
                 
             </div>
 
-            <!-- animated-div containing the login -->
+            <!-- ......Login page ...animated-div containing the login -->
             <div class="login" *ngFor="let menuItem of menu" [@slideAnimation]="menuItem.state" class="animated-div" >
                 
                     <h1>Login &nbsp;Account</h1>
@@ -76,6 +75,6 @@
                 <div class="cars" *ngIf="selectedButton === 'button4'">
                 
                 </div>
-    </div>
+        </div>
     </div>
 </section>

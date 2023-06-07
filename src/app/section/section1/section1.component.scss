@@ -20,16 +20,18 @@ section{
     z-index: 50;
 }
 
+
+
 .title{
     display: flex;
-    width: auto;
-    height: 3%;
+    width: 100%;
+    height: 13%;
 
-    margin-top: 4%;
     justify-content: center;
     align-items: center;
     color: rgb(230, 231, 233);
 
+    box-shadow: 0px 6px 1rem rgba( #013162,1);
     opacity: 1;
     z-index: 7;
     
@@ -58,6 +60,7 @@ section{
 .container::before{
     content: "";
     position: absolute;
+
     top: 0;
     left: 0;
     right: 0;
@@ -71,6 +74,8 @@ section{
     z-index: 7;
 }
 
+    // ---------------box-------------------
+
 .box{
     position: relative;
     display: flex;
@@ -81,7 +86,9 @@ section{
     align-items: center;
     justify-content: center;
     
-    margin: 2%;
+    top: 0;
+    margin-inline: 2%;
+    
     
     background:transparent;
     overflow: hidden;
@@ -89,7 +96,7 @@ section{
 
     border: 2px solid #7807da;
     border-radius: 20px;
-    transition: all 0.4s ease-out;    
+    transition: all 0.4s ease-out;
 }
 
 .box .poster{
@@ -144,7 +151,6 @@ section{
     width: 80%;
     height: 87%;
    
-    
     flex-direction: column;
     
     bottom: -53%;
@@ -161,9 +167,25 @@ section{
 }
 
 .title0{
-    position: absolute;
-    top:38%;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    justify-content: flex-start;
+    align-items: center;
     
+
+    top: 0;
+    left: 0;
+
+    
+}
+
+.title0 span{
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: 800;
 }
 
 .details:hover{
@@ -175,6 +197,7 @@ section{
     padding-bottom: 1%;
     padding-inline: 2%;
     border: 2px solid aliceblue;
+    border-radius: 5px;
 }
 
 .pics{
@@ -230,3 +253,188 @@ section{
     object-fit: cover;
     object-position:top;
 }
+
+
+// ..........Background Stars Animation.................
+
+.scene {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    top: 0;
+    left: 0;
+    background: linear-gradient(#111425,#3751e0);
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  
+  .scene i {
+    position: absolute;
+    
+    background-color: white;
+    border-radius: 50%;
+    animation: animate linear infinite;
+}
+
+.shootingstar.active{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+
+    top: 0%;
+    left: 50%;
+
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 1);
+    animation: animation 3s linear infinite;
+}
+
+.shootingstar::before{
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}
+
+.shootingstar:nth-child(1){
+
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+
+.shootingstar:nth-child(2){
+
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+
+.shootingstar:nth-child(3){
+
+    top: 80px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+.shootingstar:nth-child(4){
+
+    top: 0px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+
+.shootingstar:nth-child(5){
+
+    top: 0px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+.shootingstar:nth-child(6){
+
+    top: 0px;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+.shootingstar:nth-child(7){
+
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+
+.shootingstar:nth-child(8){
+
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+
+.shootingstar:nth-child(9){
+
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+
+.shootingstar:nth-child(10){
+
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 1.75s;
+}
+
+// ------------stars animation-------------
+  
+  @keyframes animate {
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%,90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+  }
+
+//   ------------shooting stars animation----------------
+  @keyframes animation {
+    0%{
+        
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    
+    }
+    70%{
+
+        opacity: 1;
+        
+    }
+    100%{
+        
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+
+    }
+    
+  }

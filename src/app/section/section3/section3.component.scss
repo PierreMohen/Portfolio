@@ -3,12 +3,10 @@ section{
     position: relative;
     display: flex;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     
     top: 0;
     left: 0;
@@ -18,19 +16,32 @@ section{
     animation: bganimation 20s forwards ease-in alternate;
 }
 
-
-
 *a{
     text-decoration: none;
     color: whitesmoke;
 }
 
-.title{
-    color: rgba(235, 235, 235, 0.903);
-    background: none;
-    -webkit-text-stroke: transparent;
-    -webkit-text-fill-color: currentColor;
+
+.title01{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 11%;
+
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+
+    color: aliceblue;
+    box-shadow: 0px 6px 1rem rgba( #013162,1);
+
+    // background: #173378;
+    
 }
+
+
 
 .container{
     position: relative;
@@ -41,8 +52,10 @@ section{
     box-sizing: border-box;
     flex-direction: row;
 
+    top: 7%;
     left: 0;
-    top: 0;
+
+    // background: #fff;
 
 }
 
@@ -171,6 +184,7 @@ section{
     display:none;
 }
 
+// ............Page Home..........
 
 .home{
     position: absolute;
@@ -197,28 +211,6 @@ section{
     transition: 1s ease-in-out;
 }
 
-// .animated-div {
-    
-//     position: absolute;
-//     display: flex;
-//     width: 350px;
-//     height: 100%;
-//     box-sizing: border-box;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-
-//     top: 0;
-//     left: 0;
-//     padding-left: 2%;
-//     padding-right: 2%;
-//     margin: 0%;
-
-//     color: whitesmoke;
-//     background: #4949499f;
-//     border-radius: 35px 0px 0px 35px;
-//     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.852);
-// }
 
 .allbutton{
     position: relative;
