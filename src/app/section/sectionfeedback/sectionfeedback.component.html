@@ -1,6 +1,9 @@
 <section>
+  <div class="title">
+    <h1>FeedBack </h1>
+  </div>
+  <div class="container">
   <div class="form">
-      <h1>FeedBack </h1>
 
       <form>
               <h1> How do you rate the Overall experience ? </h1>
@@ -37,22 +40,15 @@
                       <button type="submit" name="sending" id="send">Submit</button>
                   </div>
       </form>
-
-
-      <i data-eva="camera-outline"></i> rzerzezerrezrezrez
-      dfdsfsdfs
-    <i data-eva="arrow-circle-down-outline"></i>
      
   </div>
 
-  <!-- <div class="img">
-    <img *ngFor="let image of images" class="slider-image" [src]="image" alt="Slider Image">
-  </div>
-</section> -->
-<div class="slider">
-  <div class="slides" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
-    <div class="slide" *ngFor="let image of images; let i = index">
-      <img [src]="image" alt="Slide Image">
+  <div class="slider">
+    <div class="slides" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+      <div class="slide" *ngFor="let image of images; let i = index">
+        <img [src]="image" alt="Slide Image">
+      </div>
     </div>
   </div>
 </div>
+</section>

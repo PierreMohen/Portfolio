@@ -40,15 +40,14 @@ section{
 .container{
     position: relative;
     display: flex;
-    width: 85%;
+    width: 100%;
     height: auto;
-    
+
+    top: 0;
+    left: 0;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    
-    margin-bottom: 5%;
-    padding: auto 0%;
     
     background-size: cover;
     background-position: center;
@@ -149,11 +148,11 @@ section{
     position: absolute;
     display: flex;
     width: 80%;
-    height: 87%;
+    height: 95%;
    
     flex-direction: column;
     
-    bottom: -53%;
+    bottom: -55%;
     left: 0;
     padding-inline: 10%;
     padding-top: 113%;
@@ -178,14 +177,29 @@ section{
 
     top: 0;
     left: 0;
-
+    
     
 }
 
 .title0 span{
-    font-size: 30px;
+    font-size: 26px;
     color: aliceblue;
-    font-weight: 800;
+    font-weight: 700;
+}
+
+.divh4{
+    position: relative;
+    display: flex;
+    width: 96.5%;
+    height: auto;
+
+    top: 0;
+    left: 0;
+
+    padding: 2%;
+
+    border-radius: 5px;
+    background: #109148;
 }
 
 .details:hover{
@@ -206,16 +220,19 @@ section{
     width: 100%;
     height: auto;
 
+    top: 5%;
+    left: 0;
+
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     
 }
 
-.pics h4{
-    color: aliceblue;
-    margin-top: 2%;
-}
+// .pics h4{
+//     color: aliceblue;
+//     margin-top: 2%;
+// }
 
 .pics ul{
     position: relative;
@@ -269,7 +286,7 @@ section{
     
     top: 0;
     left: 0;
-    background: linear-gradient(#111425,#3751e0);
+    background: linear-gradient(#111425,#0056ab);
     background-attachment: fixed;
     overflow: hidden;
   }
@@ -281,6 +298,8 @@ section{
     border-radius: 50%;
     animation: animate linear infinite;
 }
+
+// ..........Background Shootingstars Animation.................
 
 .shootingstar.active{
     position: absolute;
@@ -400,6 +419,7 @@ section{
     animation-duration: 1.75s;
 }
 
+
 // ------------stars animation-------------
   
   @keyframes animate {
@@ -417,7 +437,9 @@ section{
     
   }
 
+  
 //   ------------shooting stars animation----------------
+
   @keyframes animation {
     0%{
         
