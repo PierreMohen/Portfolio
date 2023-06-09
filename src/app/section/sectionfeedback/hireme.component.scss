@@ -1,9 +1,9 @@
 section{
-    display: flex;
+    display: inline-block;
     position: relative;
     width: 100%;
     height: 100vh;
-    
+
     top: 0;
     left: 0;
     margin: 0;
@@ -25,7 +25,8 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #d41394;
+    background: linear-gradient(120deg,#000000,#7e03c0,#000000);
+    
 }
 
 .container {
@@ -37,76 +38,7 @@ section{
     top: 0;
     left: 0;
     flex-direction: row;
-    background: #d10d0d;
 
-}
-
-.form{
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #1d1d1d;
-    // background: linear-gradient(120deg,#000000,#0056ab,#000000);
-    background: #0bae68;
-    backdrop-filter: blur(10px);
-
-}
-
-
-.img{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-    height: 60vh;
-    border: 3px solid black;
-    overflow: hidden;
-}
-
-// .slider-image {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//     transition: opacity 0.3s ease-in-out; /* Add a transition effect for smooth image transitions */
-//   }
-
-// .img img{
-//     width: 100%;
-// }
-
-.name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.labeltext{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.feedback{
-    display: flex;
-    flex-direction: column;
-}
-
-h1{
-    text-align: center;
-}
-
-button{
-    margin-top: 5%;
-    width: 80px;
-    height: auto;
-}
-
-.box{
-    display: flex;
 }
 
 .slider {
