@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faWarning } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector:'app-home',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  warning = faWarning;
 }
