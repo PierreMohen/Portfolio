@@ -42,6 +42,7 @@ export class Section3Component implements OnInit{
     { id: 4 , name:'cars', button:'button4',state:'start' },
     
   ];
+  
   // menu = [
   //   { id: 1, name: 'home', state: 'start' },
   //   { id: 2, name: 'login', state: 'start' },
