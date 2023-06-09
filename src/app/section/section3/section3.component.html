@@ -14,7 +14,7 @@
         <div class="screen">
 
             <video controls autoplay [muted]="true" frameborder="0"loop >
-                <source src="../../../assets/pictures/AMV _ Beautiful High Quality Anime Scenes(720p).mp4" type="video/mp4" >
+                <source src="../../../assets/pictures/AMV _ Beautiful High Quality Anime Scenes(720p).mp4" type="video/mp4" alt="" >
                 Your browser does not support the video tag.
             </video>
             <!-- <img src="../../../assets/708643.jpg" alt=""> -->
@@ -26,7 +26,7 @@
             </div>
 
             <!-- ......Login page ...animated-div containing the login -->
-            <div class="login" *ngFor="let menuItem of menu" [@slideAnimation]="menuItem.state" class="animated-div" >
+            <div class="login" *ngFor="let menuItem of menu" >
                 
                     <h1>Login &nbsp;Account</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem qui sunt saepe odit illo sit.</p>
