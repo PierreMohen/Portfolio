@@ -210,8 +210,16 @@ section{
     padding-top: 1%;
     padding-bottom: 1%;
     padding-inline: 2%;
-    border: 2px solid aliceblue;
+    // border: 2px solid aliceblue;
     border-radius: 5px;
+}
+
+.passion{
+    background: radial-gradient(red 20%,rgb(223, 134, 1) ) ;
+}
+
+.hobbies{
+    background: radial-gradient(blue ,rgb(12, 78, 245) 95% ) ;
 }
 
 .pics{
