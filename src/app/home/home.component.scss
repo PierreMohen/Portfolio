@@ -292,6 +292,7 @@ button:focus{
 
 }
 .text2 span{
+    padding-bottom: 5%;
     animation: slideInText 1s linear forwards;
     transform: translateX(500%);
 }
@@ -310,7 +311,7 @@ button:focus{
     position: relative;
     width: auto;
     height: auto;
-    top: 10%;
+    top: 7%;
     padding: 5%;
     color: aliceblue;
     font-size: 14px;

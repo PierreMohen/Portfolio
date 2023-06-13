@@ -92,6 +92,7 @@ margin-inline: 2%;
 // 1 first column starting from here..................
 
 .col1{
+    order: 1;
     display: flex;
     width: 30%;
     height: auto;
@@ -209,7 +210,7 @@ margin-inline: 2%;
 // 2 second column starting from here..................
 
 .col2{
-
+    order: 2;
     display: flex;
     width: 40%;
     height: auto;
@@ -223,7 +224,7 @@ margin-inline: 2%;
 // 3 third column starting from here..................
 
 .col3{
-
+    order: 3;
     display: flex;
     width: 30%;
     height: auto;
