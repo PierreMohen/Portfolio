@@ -29,10 +29,6 @@ export class Section3Component implements OnInit{
   startAnimation(div: any) {
     div.state = 'end';
   }
-
-  
-  icon=['icon1'];
-  submenu=['item1','item2','item3'];
   
   menu: { id:number; name: string; button: string; state:string }[] =[
     
@@ -42,12 +38,7 @@ export class Section3Component implements OnInit{
     { id: 4 , name:'cars', button:'button4',state:'start' },
     
   ];
-  // menu = [
-  //   { id: 1, name: 'home', state: 'start' },
-  //   { id: 2, name: 'login', state: 'start' },
-  //   { id: 3, name: 'city', state: 'start' },
-  //   { id: 4, name: 'cars', state: 'start' }
-  // ];
+
 
   selectedButton: string = '';
 
