@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomerService } from 'src/app/Services/customer.service';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { faCoffee,faEnvelope,faMobilePhone,faPhone,faUser,faLock } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-section3',
@@ -18,6 +19,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 export class Section3Component implements OnInit{
 
+  mail = faEnvelope;
+  password = faLock;
   constructor(private readonly _customer:CustomerService){}
   divs = [
     { id: 1, state: 'start' },

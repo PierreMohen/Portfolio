@@ -228,13 +228,13 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     top: 0;
     left: 0;
     padding-left: 2%;
     padding-right: 2%;
     margin: 0%;
-
+    
     color: whitesmoke;
     background: #0b2fe79f;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.852);
@@ -258,54 +258,96 @@ section{
 //.........Page login content.........
 
 .login{
-    position: absolute;
+    position: relative;
     display: flex;
     width: 40%;
     height: 100%;
     
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
+    
     top: 0;
     left: 0;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin: 0%;
-
+    padding-inline: 3%;
+    
     color: whitesmoke;
-    background: #67676734;
+    background: linear-gradient(-45deg,rgba(39, 39, 39, 0.777),#1f1c24cd,rgba(39, 39, 39, 0.777));
+    backdrop-filter: blur(10px);
     border-radius: 35px 0px 0px 35px;
     box-shadow: 1px 0px 1px rgba(56, 56, 56, 0.729);
+    
 }
 
 .login h1{
     
-    position: absolute;
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    box-sizing: border-box;
     top: 5%;
+
     text-align: center;
     justify-content: center;
     
 }
 
-.login p{
+form{
+    position: relative;
+    width: 100%;
+    height: auto;
 
-    position: absolute ;
+    box-sizing: border-box;
+    top: 10%;
+    left: 0;
+}
+
+table{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    top: 0%;
+    left: 0;
+    
+}
+
+.login p{
+    
+    position: relative ;
+    width: 100%;
+    height: auto;
+    
+    box-sizing: border-box;
     font-size: 15px;
     
-    top: 20%;
-    margin: 0% 5%;
+    top: 5%;
+    left: 0;
+    
     text-align: center;
     justify-content: center;
     
 }
 
 .email{
+    position: relative;
+    width: 90%;
+    height: auto;
+
+    box-sizing: border-box;
+    
+    top: 0;
+    left: 0;
+
     outline: none;
-    // pointer-events: none;
-    width: 265px;
-    height: 30px;
     font-size: 1em;
     
     background: transparent;
@@ -316,72 +358,131 @@ section{
 }
 
 .pw{
+    position: relative;
+    width: 90%;
+    height: auto;
+
+    box-sizing: border-box;
+    flex-direction: row;
     outline: none;
-    // pointer-events: none;
-    width: 265px;
-    height: 30px;
+    
+    top: 0;
+    left: 0;
+    
     font-size: 1em;
     
     background: transparent;
     border: none;
 }
 
-
-table{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    margin-top: 25%;
-    margin-bottom: 0%;
-    
+.icon{
+    position: absolute;
+    left: 92%;
+    opacity: 0.3;
 }
 
 .tr{
-    margin-top: 2%;
+    position: relative;
+    width: 90%;
+    height: auto;
+
+    box-sizing: border-box;    
+    flex-direction: row;
+    margin-top: 5%;
     margin-bottom: 5%;
+
+    top: 0;
+    left: 0;
+
     border-bottom: 2px solid #cf7b0c;
     border-radius: 5px;
 }
 
-.connection{
+.trconnection{
+    position: relative;
     display: flex;
-    width: 280px;
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+
+    top: 0;
+    left: 0;
+
+}
+
+.connection{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
     
+    box-sizing: border-box;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     align-items: center;
     
+    top: 0;
+    left: 0;    
     margin-top: 10%;
+    
 }
 
 .connectiona{
+    position: relative;
     display: flex;
     width: auto;
+    height: auto;
     
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
     flex-direction: row;
-   
+    
+    top: 0;
+    left: 5%;
+    
+    font-size: 14px;
+    
 }
 
 .connectionb{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: auto;
+    
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: center;
+    
+    top: 0;
+    right: 5%;
+
     font-size: 14px;
-    margin-left: 0%;
+    
 }
 
 .btnform{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+    
+    top: 0;
+    left: 0;
     margin-top: 70%;
+    
     border-radius: 0px;
 }
 
 
 .fetchdata{
-    position: absolute;
+    position: relative;
     display: flex;
+    width: 100%;
+    height: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;

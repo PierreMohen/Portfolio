@@ -36,14 +36,14 @@
                     <form> 
                         <table>
                             <tr ngClass="tr"> 
-                                <input ngClass="email" type="email" name="email" id="email" placeholder="Email" required>
+                                <input ngClass="email" type="email" name="email" id="email" placeholder="Email" required><fa-icon [icon]="mail" ngClass="icon"></fa-icon>
                             </tr>
                         
                             <tr ngClass="tr">
-                                <input ngClass="pw" type="password" name="password" id="password" placeholder="Password" required>       
+                                <input ngClass="pw" type="password" name="password" id="password" placeholder="Password" required><fa-icon [icon]="password" ngClass="icon"></fa-icon>
                             </tr>
                         
-                            <tr>
+                            <tr ngClass="trconnection">
                                 <div ngClass="connection">
                                     <div ngClass="connectiona">
                                         <input type="checkbox" name="" id="">Stay connected?
