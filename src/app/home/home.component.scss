@@ -1,3 +1,11 @@
+:root{
+    --font-size-h1: 35px;
+    --font-size-h2: 40px;
+    
+    --color-h1 : ;
+    --color-h2 : ;
+}
+
 section{
     position: relative;
     display: flex;
@@ -120,6 +128,7 @@ section{
     display: inline-block;
     width: 100%;
     height: auto;
+
     color:azure ;
     font-weight: bolder;
     font-size: 40px;
@@ -130,6 +139,7 @@ section{
     display: inline-block;
     width: 100%;
     height: auto;
+
     color: #ececed;
 }
 
@@ -311,12 +321,15 @@ button:focus{
     position: relative;
     width: auto;
     height: auto;
+
     top: 7%;
     padding: 5%;
+
     color: aliceblue;
     font-size: 14px;
     font-style: italic;
     font-weight: bolder;
+
     background:linear-gradient(45deg,rgb(128, 13, 215),rgb(130, 11, 146),rgb(176, 132, 22)) ;
     animation-delay: 11s;
     border-radius: 10px;
@@ -381,7 +394,32 @@ button:focus{
 
 
 /* For Tablet View */
-@media screen and (min-width: 768px)
-    and (max-width: 1024px) {
+@media screen and (min-width: 800px)
+    and (max-width: 1280px) {
+        .section{
+            height: 50vh;
+        }
 
     }
+
+    @media (min-width:320px)  { 
+        
+        section{
+            height: auto;
+
+        }
+
+        
+
+        /* smartphones, iPhone, portrait 480x320 phones */
+    }
+    
+    @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+    
+    @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+    
+    @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+    
+    @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+    @media (min-width:1281px) { /* hi-res laptops and desktops */ }
