@@ -1,3 +1,6 @@
+#Hey If you want only to see the project on your browser you can visit this link:" https://portfolio-4e293.web.app "
+
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
