@@ -32,7 +32,7 @@ library.add(faCoffee);
     ColorComponent,
     SectionfeedbackComponent,
     FooterComponent,
-    
+  
     
     
     
@@ -44,6 +44,7 @@ library.add(faCoffee);
     HttpClientModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
+  
 
   ],
   providers: [],

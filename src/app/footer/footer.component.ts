@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCoffee,faEnvelope,faMobilePhone,faPhone,faUser } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee,faEnvelope,faMobilePhone,faPhone,faUser,faPlay } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -12,4 +12,5 @@ export class FooterComponent {
   phone = faMobilePhone;
   phone1 = faPhone;
   user  = faUser;
+  play =faPlay;
 }

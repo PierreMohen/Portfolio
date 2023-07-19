@@ -1,5 +1,5 @@
 *a{
-    color: aqua;
+    color: aliceblue;
     text-decoration: none;
 }
 
@@ -67,22 +67,35 @@ margin-inline: 2%;
 }
 
 .col0{
+    position: relative;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
+
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+
+    border: #013162 3px solid;
+}
+.col00{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70%;
 
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: #013162 3px solid;
-}
-.col00{
-    position: absolute;
-    width: 100%;
-    height: 50%;
 
-    box-sizing: border-box;
+    top: 0;
+    left: 0;
+
     border-top: #0056ab 2px solid;
     border-bottom: #0056ab 2px solid;
     border-radius: 20px;
@@ -91,37 +104,147 @@ margin-inline: 2%;
 
 .col1{
     order: 1;
+    position: relative;
     display: flex;
-    width: 30%;
-    height: auto;
+    width: 25%;
+    height: 25vh;
 
     flex-direction: column;
-    // border: #6aab00 2px solid;
+    justify-content: center;
+    align-items: center;
+    
+    top: 0;
+    left: 0;
+
+    border: #9dab00 2px solid;
 
 }
 
 .c1{
+    position: relative;
     display: flex;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 
-    margin-left: 5%;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    // border: #000000 2px solid;
+
+    top: 0;
+    left: 0;
+
 }
+
 .c1 span{
     line-height: 35px;
 }
 
 .c1 h3{
+    position: relative;
     width: 40%;
     text-align: center;
+    
+    top: 0;
+    left: 0;
+    
     border-radius: 20px;
     border-bottom: 3px solid #0056ab;
     border-left: 3px solid #0056ab;
     border-right: 3px solid #0056ab;
+
+}
+
+// --------------------bg icons--------------
+.containerphone{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    top: 0;
+    left: 0;
+
+    // border: 4px solid #d00f0f;
+}
+
+.containerphone span{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+
+    // border: 4px solid #029dd5;
+}
+
+
+.phone1{
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    
+    justify-content: center;
+    align-items: center;
+    
+    top: 0;
+    left: 0;
+    
+    border-radius: 5px;
+    background: linear-gradient(120deg,#0056ab 15%,#029dd5);
+    
+}
+
+.containermail{
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    margin-top: 3%;
+    top: 0;
+    left: 0;
+    
+    // border: 4px solid #029dd5;
+}
+
+.containermail span{
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.mail{
+
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    
+    justify-content: center;
+    align-items: center;
+    
+    top: 0;
+    left: 0;
+    
+    border-radius: 5px;
+    background: linear-gradient(120deg,#0056ab 15%,#029dd5);
 
 }
 
@@ -134,7 +257,7 @@ margin-inline: 2%;
     justify-content: center;
     align-items: flex-start;
     
-    margin-left: 5%;
+    // margin-left: 5%;
 
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -178,6 +301,7 @@ margin-inline: 2%;
     z-index: 5;
 
     }
+
     .gmail{
         position: relative;
         display: flex;
@@ -208,23 +332,25 @@ margin-inline: 2%;
 // 2 second column starting from here..................
 
 .col2{
-    order: 2;
+    order: 3;
+    position: relative;
     display: flex;
-    width: 40%;
+    width: 25%;
     height: auto;
 
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
 // 3 third column starting from here..................
 
 .col3{
-    order: 3;
+    order: 2;
+    position: relative;
     display: flex;
-    width: 30%;
+    width: 25%;
     height: auto;
 
     flex-direction: column;
@@ -233,43 +359,76 @@ margin-inline: 2%;
     
 }
 
-.youtube{
-    position: relative;
-    width: 20px;
-    height: 18px;
+.col3 h3{
+    text-align: center;
+    
+    border-radius: 20px;
+    border-bottom: 3px solid #000000;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    
+}
 
-    margin-left: 1%;
-    margin-right: 3%;
+.bgplay{
+    position: relative;
+    display: flex;
+    width: 45px;
+    height: 25px;
+
+    top: 0;
+    left: 0;
+
+    margin-right: 2%;
+
+    justify-content: center;
+    align-items: center;
 
     background: linear-gradient( #d00f0f,#b60606);
-    border-radius: 60% / 10.2%;
-  }
+    border-radius: 20%;
+}
 
-  .youtube::before{
-    content: "";
-    position: absolute;
-    
-    top: 7%;
-    bottom: 7%;
-    right: -9.5%;
-    left: -9.5%;
+.play{
+    font-size: 12px;
+    color: aliceblue;
+}
 
-    background: inherit;
-    border-radius: 9% / 50%;
-  }
+// .youtube{
+//     position: relative;
+//     width: 30px;
+//     height: 30px;
 
-  .youtube::after{
-    content: '';
-    position: absolute;
+//     margin-left: 1%;
+//     margin-right: 3%;
+
+//     background: linear-gradient( #d00f0f,#b60606);
+//     border-radius: 60% / 10.2%;
+//   }
+
+//   .youtube::before{
+//     content: "";
+//     position: absolute;
     
-    left: 36%;
-    top: 33%;
+//     top: 7%;
+//     bottom: 7%;
+//     right: -9.5%;
+//     left: -9.5%;
+
+//     background: inherit;
+//     border-radius: 9% / 50%;
+//   }
+
+//   .youtube::after{
+//     content: '';
+//     position: absolute;
     
-    border-top: 3.5px solid transparent;
-    border-left: 6px solid #fff;
-    border-bottom: 3.5px solid transparent;
-    border-radius: 30%/5%;
-  }
+//     left: 36%;
+//     top: 33%;
+    
+//     border-top: 3.5px solid transparent;
+//     border-left: 6px solid #fff;
+//     border-bottom: 3.5px solid transparent;
+//     border-radius: 30%/5%;
+//   }
 
 //   flex-direction row logo and link...............
     .divrow {
@@ -285,10 +444,11 @@ margin-inline: 2%;
 }
 
     .divrow a {
-        width: 100%;
-        height: auto;
         position: relative;
         display: flex;
+        width: 100%;
+        height: auto;
+
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
@@ -298,12 +458,37 @@ margin-inline: 2%;
     .divrow a span{
         width: 100%;
         height: auto;
+        
+        // background: linear-gradient(-45deg,rgb(255, 140, 0),#b60606);
+        // border: 2px solid #029dd5;
+        border-radius: 20px;
+        border-bottom: 3px solid #0056ab;
+        
+        
     }
 // copyright info
 
 .copyright{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
     justify-self: center;
     align-self: center;
+    
     color: aliceblue;
     // border: 3px solid #013162;
 }
+
+.copyright p{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,11 +1,13 @@
 
-body{
+.body{
     position: relative;
-    display: inline-block;
-    width: 70%;
+    display: flex;
+    width: 100%;
     height: auto;
 
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     left: 0;
@@ -27,7 +29,7 @@ body{
     height: auto;
 
     box-sizing: border-box;
-    justify-content: center;
+   
 
     flex-direction: column;
     
@@ -55,3 +57,18 @@ body{
   .container::-webkit-scrollbar-track {
     background-color: transparent;
   }
+
+
+  @media screen and (max-width: 1400px)  {
+    .container{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1400px)  {
+    .container{
+        width: 1400px;
+    }
+    
+}

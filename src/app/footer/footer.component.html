@@ -11,13 +11,18 @@
         
         <!-- container containing all 3 columns............ -->
         <div ngClass="col0">
-                <div ngClass="col00"></div>
+                <div ngClass="col00">
                 <!-- 1 first column starting from here........ -->
                 <div ngClass="col1">
                     <div ngClass="c1">
                         <h3> Contact Me</h3>
-                        <span><fa-icon [icon]="phone1"></fa-icon>&nbsp; Phone : +32 488 33 75 64</span>
-                        <span><fa-icon [icon]="mail"></fa-icon>&nbsp; Email : Tshilolop@gmail.com </span>
+                        <div class="containerphone">
+                            <span><fa-icon [icon]="phone1" ngClass="phone1"></fa-icon>&nbsp; Phone : +32 488 33 75 64</span>
+                        </div>
+
+                        <div class="containermail">
+                            <span><fa-icon [icon]="mail" ngClass="mail"></fa-icon>&nbsp; Email : Tshilolop@gmail.com </span>
+                        </div>
                     </div>
                     <br>
         
@@ -47,28 +52,31 @@
                     <h3>[icon] Reference & Subscribe</h3>
                     <div ngClass="divrow">
                         <a href="https://www.youtube.com/@OnlineTutorialsYT">
-                            <div ngClass="youtube"></div>
+                            <div ngClass="bgplay"><fa-icon [icon]="play" ngClass="play"></fa-icon></div>
+                            
                             <span> Online Tutorials </span>
                         </a>
                     </div>
 
                     <div ngClass="divrow">
                         <a href="https://www.youtube.com/@TechieCoder">
-                            <div ngClass="youtube"></div>
+                            <div ngClass="bgplay"><fa-icon [icon]="play" ngClass="play"></fa-icon></div>
                             <span>Techie Coder</span>
                         </a>
                     </div>
 
                     <div ngClass="divrow">
                         <a href="https://www.youtube.com/@KevinPowell">
-                            <div ngClass="youtube"></div>
+                            <div ngClass="bgplay"><fa-icon [icon]="play" ngClass="play"></fa-icon></div>
                             <span>Kevin Powell</span>
                         </a>
                     </div>
                 </div>
         </div>
+
         <div ngClass="copyright">
-    <p>Started 22-May-2023 - <a href="https://github.com/PierreMohen">Pierre-Marie DSP</a></p>
-</div>
+            <p>Started 22-May-2023 - <a href="https://github.com/PierreMohen">Pierre-Marie DSP</a></p>
+        </div>
+    </div>
     </div>
 </section>

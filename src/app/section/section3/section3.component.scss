@@ -170,7 +170,7 @@ section{
     position: relative;
     display: inline-block;
     width: 55%;
-    height: 70vh;
+    height: 69.8vh;
     
     box-sizing: border-box;
     justify-content: center;
@@ -183,6 +183,7 @@ section{
     // background-image:url("../../../assets/708643.jpg");
     // background-size: cover;
     // background-position: center;
+    box-shadow: 0px 0px 8px rgba(rgb(92, 3, 155),1);
     border: 3px solid #f48282;
     border-radius: 37px;
     z-index: 20;
@@ -292,6 +293,8 @@ section{
     text-align: center;
     justify-content: center;
     
+    // border: 3px solid aliceblue;
+    // border-radius: 30px;
 }
 
 form{
@@ -315,7 +318,7 @@ table{
     align-items: center;
     flex-direction: column;
 
-    top: 0%;
+    top: 0;
     left: 0;
     
 }

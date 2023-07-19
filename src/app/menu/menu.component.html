@@ -1,10 +1,16 @@
+
 <header ngxHideOnScroll [ngClass]="'nav--hidden'" id="menubar">
     <nav>
         <div ngClass="logo">Portfolio</div>
         <ul>
             <li  *ngFor="let element of menu"><a href={{element.url}}>{{element.name|titlecase}}</a></li>
         </ul>
-       
+        <div class="hamburger relative w-auto h-auto inline-block cursor-pointer ml-75%" [ngClass]="{ 'open': isMenuVisible }" (click)="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          
         
     </nav>
 </header>

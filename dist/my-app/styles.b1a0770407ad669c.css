@@ -1,0 +1,1 @@
+@tailwind base;@tailwind components;@tailwind utilities;.custom-button{background-color:red;color:#fff;padding:8px 16px;border-radius:4px}.custom-heading{font-size:24px;font-weight:700;color:#0f0}*{scroll-behavior:smooth}body{background:#fff}

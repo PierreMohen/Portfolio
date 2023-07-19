@@ -25,6 +25,11 @@ export class MenuComponent {
     
     
     ];
+    isMenuVisible: boolean = false;
+
+  toggleMenu() {
+    this.isMenuVisible = !this.isMenuVisible;
+  }
  
     isMenuBarVisible: boolean = false;
 

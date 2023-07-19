@@ -1,0 +1,20 @@
+// custom-styles.scss
+
+/* Customize Tailwind CSS */
+$primary-color: #FF0000; // Replace with your desired color
+$secondary-color: #00FF00; // Replace with your desired color
+
+/* Custom button style using Tailwind CSS classes and SCSS variables */
+.custom-button {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+/* Other custom styles */
+.custom-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: $secondary-color;
+}

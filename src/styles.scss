@@ -1,3 +1,15 @@
+// styles.scss
+
+// Import Tailwind CSS
+@import '../node_modules/tailwindcss/base.css';
+@import '../node_modules/tailwindcss/components.css';
+@import '../node_modules/tailwindcss/utilities.css';
+
+// Your custom SCSS code goes here
+// For example:
+@import '../src/custom-styles.scss';
+
+
 // /* You can add global styles to this file, and also import other style files */
 // body{
     
