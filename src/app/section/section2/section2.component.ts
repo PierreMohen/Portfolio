@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-section2',
@@ -6,6 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./section2.component.scss']
 })
 export class Section2Component {
+
+  isHovered: boolean = false;
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.isHovered = true;
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.isHovered = false;
+  }
 
   isActive: boolean = false
   switchActive() {

@@ -25,17 +25,26 @@ export class MenuComponent {
     
     
     ];
-    isMenuVisible: boolean = false;
 
+    isMenuVisible = false;
+  isMobileScreen = false;
+
+  // Function to toggle the menu state
   toggleMenu() {
     this.isMenuVisible = !this.isMenuVisible;
   }
- 
-    isMenuBarVisible: boolean = false;
 
-    @HostListener('window:scroll', [])
-    onWindowScroll() {
-      this.isMenuBarVisible = window.pageYOffset > 0;
-}
+  // Use HostListener to track window resize and update isMobileScreen
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.isMobileScreen = window.innerWidth < 900;
+    // Show the entire menu when the screen width is greater than 800 pixels
+    this.isMenuVisible = window.innerWidth >= 900;
+  }
 
+  // Initialize isMobileScreen and isMenuVisible based on initial window width
+  constructor() {
+    this.isMobileScreen = window.innerWidth < 900;
+    this.isMenuVisible = window.innerWidth >= 900;
+  }
 }

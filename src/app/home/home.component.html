@@ -1,29 +1,51 @@
 <section >
     
     <div ngClass="container" id="home">
-            <div  ngClass="intro">
+        <div class="fullintro">
+            <div ngClass="intro">
                 
-                <span ngClass="intro1">Hello, I am</span>
-                <span ngClass="intro2"> Pierre-Marie Tshilolo</span>
-                <span ngClass="text"><p>As an aspiring Junior Web Developer, I am passionate about Front-End Coding and Designing. ptate debitis veniam pariatur maxime ducimus aliquid quod vero facere, iusto earum numquam adipisci quas eos mollitia. Exercitationem!</p>
-                </span>
+                <div ngClass="header1">
+
+                    <div ngClass="names">
+                        <span ngClass="intro1">Hello, I am</span>
+                        <span ngClass="intro2"> Pierre-Marie Tshilolo</span>
+                    </div>
+
+                    <div ngClass="profil1">
+                    </div>
+
+                </div>
+                
+                <div ngClass="main1 text">
+                        <p> <span ngClass="firstletter">A</span>s an aspiring Junior Web Developer, I am passionate about Front-End Coding and Designing.</p>
+                        <p>Take your time to visit my portfolio !</p>
+                </div>
             </div>
         
-            <a href="#footer" ngClass="buttonglow">
-                    <button>Hire Me!</button>
-            </a>
-            <div ngClass="blur">
+            <div ngClass="hireme">
+                <a href="#footer">
+                    <button >Hire Me!</button>
+                </a>
+            </div>
+            
+        </div>
+
+        <div ngClass="blur">
                 <!-- <img src="../../assets/pictures/decor-2483158.png" alt=""> -->
                 <div ngClass="profil">
                     <div ngClass="text2">
                         <span> Hey there!</span>
                         <span> Welcome to my world...</span>
-                        <span> Work in process <fa-icon [icon]="warning"></fa-icon> </span>
+                        <span id="warning"> Work in process <fa-icon [icon]="warning"></fa-icon> </span>
                     </div>
                     <div class="pic1">
-                        <img src="../../assets/pictures/hey.jpg" alt="" width="30px">
+                        <picture>
+                            <source srcset="../../assets/pictures/hey.avif" type="image/avif" />
+                            <source srcset="../../assets/pictures/hey.webp" type="image/webp" />
+                            <img src="../../assets/pictures/hey.jpg" alt="me" width="30px" loading="lazy">
+                        </picture>
                     </div>
                 </div>
-            </div>
+        </div>
     </div>
 </section>

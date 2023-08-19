@@ -1,4 +1,4 @@
-<section id="section3" ngClass="animated-section">
+<section id="section3" ngClass="animated-section" #sectionElement>
     <div ngClass="title01">
         <h2>Section 3. Rent Me!</h2>
     </div>
@@ -15,10 +15,16 @@
         </div>
         <div ngClass="screen">
 
-            <video controls autoplay [muted]="true" frameborder="0"loop >
-                <source src="../../../assets/pictures/AMV _ Beautiful High Quality Anime Scenes(720p).mp4" type="video/mp4" alt="" >
+            <video controls autoplay [muted]="true" frameborder="0" loop>
+               
+                <!-- MP4 format (a widely supported video format) -->
+                <source
+                  src="../../../assets/pictures/AMV _ Beautiful High Quality Anime Scenes(720p).mp4"
+                  type="video/mp4"
+                >
                 Your browser does not support the video tag.
-            </video>
+              </video>
+              
             <!-- <img src="../../../assets/708643.jpg" alt=""> -->
 
             <div *ngFor="let element of donnees" ngClass="fetchdata">

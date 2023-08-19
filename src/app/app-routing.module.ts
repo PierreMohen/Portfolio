@@ -5,7 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { Section1Component } from './section/section1/section1.component';
 import { Section2Component } from './section/section2/section2.component';
 import { Section3Component } from './section/section3/section3.component';
-import { SectionfeedbackComponent } from './section/sectionfeedback/sectionfeedback.component';
+import { Section4Component } from './section/section4/section4.component';
+import { Section5Component } from './section/section5/section5.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'section1', component: Section1Component },
   { path: 'section2', component: Section2Component },
   { path: 'section3', component: Section3Component },
-  { path: 'hireme', component: SectionfeedbackComponent },
+  { path: 'section4', component: Section4Component },
+  { path: 'section5', component: Section5Component },
   { path: 'footer', component: FooterComponent },
 
 ];

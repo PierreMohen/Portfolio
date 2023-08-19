@@ -1,16 +1,19 @@
-
-<header ngxHideOnScroll [ngClass]="'nav--hidden'" id="menubar">
+<header id="menubar">
     <nav>
-        <div ngClass="logo">Portfolio</div>
-        <ul>
-            <li  *ngFor="let element of menu"><a href={{element.url}}>{{element.name|titlecase}}</a></li>
-        </ul>
-        <div class="hamburger relative w-auto h-auto inline-block cursor-pointer ml-75%" [ngClass]="{ 'open': isMenuVisible }" (click)="toggleMenu()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          
-        
+      <div ngClass="logo">Portfolio</div>
+      <ul *ngIf="isMenuVisible">
+        <li *ngFor="let element of menu" ><a href={{element.url}}>{{element.name|titlecase}}</a></li>
+      </ul>
+  
+      <!-- Use ngIf to conditionally render the hamburger icon -->
+      <div *ngIf="isMobileScreen; else notMobile" class="hamburger relative w-auto h-auto inline-block cursor-pointer ml-75%" (click)="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ng-template #notMobile>
+        <!-- Render something else (optional) when not on a mobile screen -->
+      </ng-template>
     </nav>
-</header>
+  </header>
+  

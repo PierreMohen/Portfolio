@@ -3,7 +3,7 @@
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 100vh;
+    height: auto;
 
     box-sizing: border-box;
     justify-content: center;
@@ -22,7 +22,7 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: 11%;
+    height: auto;
 
     top: 0;
     left: 0;
@@ -32,4 +32,115 @@
     color: aliceblue;
     box-shadow: 0px -6px 1rem rgba( #013162,1);
     background: linear-gradient(90deg,black, #4fb600 50%,black);
+}
+
+.pics{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+  
+
+    box-sizing: border-box;
+    
+    
+    justify-content: center;
+    align-items: center;
+}
+
+dialog {
+    border-radius: 10px;
+  }
+  
+  dialog::backdrop {
+    animation: fade 0.5s ease forwards;
+  }
+  
+  button {
+    height: 40px;
+    padding: 5px 10px;
+  }
+  
+  button:focus {
+    outline: 2px solid #f90;
+  }
+  
+.bg1{
+margin: 1%;
+width: 400px;
+height: 200px;
+background: linear-gradient(
+  #f90 0,
+  #f90 2%,
+  #555 2%,
+  #eee 50%,
+  #555 98%,
+  #f90 98%,
+  #f90 100%,
+);
+}
+
+.bg2{
+  margin: 1rem;
+  width: 400px;
+  height: 200px;
+  background: radial-gradient(12rem circle at bottom,rgb(0, 242, 255) ,rgb(154, 46, 237), rgb(0, 21, 255));
+}
+
+
+.bg3{
+  margin: 1rem;
+  width: 200px;
+  height: 200px;
+  background: conic-gradient(at center,rgb(29, 43, 230) 0%,white,rgb(112, 7, 126));
+}
+
+
+.bg4{
+  margin: 1rem;
+  width: 200px;
+  height: 200px;
+  background: conic-gradient(at center,rgb(29, 43, 230) 0 25%,orange 0% 180deg,rgb(112, 7, 126) 0% 75% ,rgb(0, 213, 255) 0%);
+}
+
+.bg5{
+  margin: 1rem;
+  width: 200px;
+  height: 200px;
+  background: repeating-radial-gradient(rgb(19, 111, 197) 0px,rgb(170, 0, 255) 5px,rgb(0, 255, 132) 10px);
+}
+
+.bg6{
+  margin: 1rem;
+  width: 400px;
+  height: 200px;
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%,transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,0.1) 15%,transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,0.1) 15%,transparent 20%), 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
+}
+  .bg7{
+      
+  }
+  
+
+    // -------------------Media Queries---------------------
+
+/* For Phone View */
+@media screen and (max-width: 320px){
+
+
+}
+
+/* For Tablet View */
+@media screen and (min-width: 321px) and (max-width: 800px) {
+        
+
+}
+
+/* For Desktop */
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+    
 }

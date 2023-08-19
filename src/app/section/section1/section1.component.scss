@@ -1,3 +1,24 @@
+$h1:2.5rem;
+$h2:2rem;
+$h3:1.5rem;
+$h4:1.2rem;
+$p:1rem;
+$color:aliceblue;
+
+*{
+font-family: 'Roboto Serif', serif;
+text-decoration: none;
+color: $color;
+}
+
+p{
+    margin-block: 5%;
+    font-size: $p;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    word-break:keep-all;
+}
+
 section{
     position: relative;
     display:flex;
@@ -5,35 +26,35 @@ section{
     height: 100vh;
 
     box-sizing: border-box;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: column;
     
     margin: 0;
     padding: 0;
+
     top: 0;
     left: 0;
-    right: 0;
     
     background: linear-gradient(120deg,#000000,#0056ab,#000000);
     box-shadow: 0px -6px 1rem rgba( #013162,1);
-    z-index: 50;
+
+    
 }
 
 
 
 .title{
+    position: relative;
     display: flex;
     width: 100%;
-    height: 13%;
+    height: auto;
 
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
+
     color: rgb(230, 231, 233);
 
     box-shadow: 0px 6px 1rem rgba( #013162,1);
-    opacity: 1;
-    z-index: 7;
     
 }
 
@@ -41,46 +62,49 @@ section{
     position: relative;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
 
-    top: 0;
-    left: 0;
+    box-sizing: border-box;
+
     justify-content: center;
     align-items: center;
     flex-direction: row;
     
-    background-size: cover;
-    background-position: center;
-    border-radius: 45px;
-    z-index: 6;
+    top: 0%;
+    left: 0%;
+
+    background: #0000003f;
+
 
 }
 
-.container::before{
-    content: "";
+.blur{
     position: absolute;
+    width: 100%;
+    height: 5vh;
+
+    box-sizing: border-box;
 
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    
-    background-size: cover;
-    background-position: center;
-    filter: blur(2px);
 
-    border-radius: 45px;
-    z-index: 7;
+    backdrop-filter: blur(20px);
+    filter: contrast(100%);
+    box-shadow: 0px 8px 20px #7807da ;
+
+    z-index: 100;
 }
+
 
     // ---------------box card-------------------
 
 .box{
     position: relative;
     display: flex;
-    width: 320px;
-    height: 450px;
+    width: 20%;
+    height: 58vh;
 
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -88,8 +112,13 @@ section{
     top: 0;
     margin-inline: 2%;
     
-    
-    background:transparent;
+    background-image:url("../../../assets/pictures/4k-Wallpapers-download-2023.avif"),
+                     url("../../../assets/pictures/4k-Wallpapers-download-2023.webp"),
+                     url("../../../assets/pictures/4k-2023.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 
@@ -99,15 +128,18 @@ section{
 }
 
 .box .poster{
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 450px;
+    height: 100%;
+
+    box-sizing: border-box;
     
     top: 0;
     left: 0;
     
     overflow: hidden;
-    z-index: 8;
+    z-index: 20;
+
 }
 
 .box .poster::before{
@@ -119,7 +151,7 @@ section{
     bottom: -180px;
     background: linear-gradient(0deg,#0056ab 50%,transparent);
     transition: 0.5s;
-    z-index: 10;
+    z-index: 25;
 }
 
 .box:hover .poster::before{
@@ -147,23 +179,28 @@ section{
 .details{
     position: absolute;
     display: flex;
-    width: 80%;
+    width: 78%;
     height: 95%;
-   
+
     flex-direction: column;
     
-    bottom: -55%;
+    bottom: -65%;
     left: 0;
-    padding-inline: 10%;
-    padding-top: 113%;
-    padding-bottom: 0%;
+    right: 0;
     
-    color: aliceblue;
+    padding-inline: 11%;
+    padding-top: 113%;
+    padding-bottom: 2%;
+    
+    color: $color;
     border-top: #000000 3px solid;
     transition: 0.5s;
-    z-index: 11;
+
+    z-index: 30;
+    
     
 }
+
 
 .title0{
     position: relative;
@@ -171,20 +208,38 @@ section{
     width: 100%;
     height: auto;
 
+    box-sizing: border-box;
     justify-content: flex-start;
     align-items: center;
-    
 
     top: 0;
     left: 0;
-    
+
+    font-size: $h2;
+    color: $color;
+    font-weight: 700;
+
+}
+
+.allpassions{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+
+    box-sizing: border-box;
+
+    top: 0;
+    left: 0;
+
+    justify-content: space-around;
+    align-items: center;
+
     
 }
 
-.title0 span{
-    font-size: 26px;
-    color: aliceblue;
-    font-weight: 700;
+.content{
+    margin-top: 0%;
 }
 
 .divh4{
@@ -207,8 +262,7 @@ section{
 }
 
 .subtitle{
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-block: 1%;
     padding-inline: 2%;
     // border: 2px solid aliceblue;
     border-radius: 5px;
@@ -228,13 +282,13 @@ section{
     width: 100%;
     height: auto;
 
-    top: 5%;
+    top: 0%;
     left: 0;
 
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    
+
 }
 
 
@@ -244,65 +298,90 @@ section{
     width: 100%;
     height: 100%;
 
+    box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     
     left: 0;
     top: 0;
-    margin-top: 0%;
+    
+    margin: 0%;
     padding:0;
+    
+    list-style-type: none;
     
 } 
 
-.pics ul li{
-    position: relative;
-    width: 55px;
-    height: 55px;
-    
-    left: 0;
+#box1{
 
-    list-style-type: none;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid aliceblue;
+
 }
 
-.pics ul li img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position:top;
+#box2{
+
+
+}
+
+#box3{
+
+
+}
+
+
+.image-item{
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 50%/50%;
+    border: $color 2px solid;
+
+}
+
+.image-item:nth-child(1){
+    background-image: url("../../../assets/pictures/1686229731953.JPG");
+}
+.image-item:nth-child(2){
+    background-image: url("../../../assets/pictures/pxfuel.jpg");
+}
+.image-item:nth-child(3){
+    background-image: url("../../../assets/pictures/pic.jpg");
 }
 
 
 // ..........Background Stars Animation.................
 
 .scene {
-    position: relative;
-    display: flex;
+    position: absolute;
     width: 100%;
     height: 100%;
 
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     
     top: 0;
     left: 0;
+    margin: 0;
+    padding: 0;
+
     background: linear-gradient(#111425,#0056ab);
-    background-attachment: fixed;
+    // background-attachment: fixed;
     overflow: hidden;
+    
+    border-radius: 0%;
+    
+    z-index: 0.9;
   }
   
   .scene i {
     position: absolute;
     
-    background-color: white;
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.83);
+    border-radius: 50%/50%;
     animation: animate linear infinite;
 }
+
 
 // ..........Background Shootingstars Animation.................
 
@@ -320,6 +399,8 @@ section{
     0 0 0 8px rgba(255, 255, 255, 0.1),
     0 0 20px rgba(255, 255, 255, 1);
     animation: animation 3s linear infinite;
+
+    z-index: 0.8;
 }
 
 .shootingstar::before{
@@ -467,3 +548,62 @@ section{
     }
     
   }
+  
+
+
+  // -------------------Media Queries---------------------
+
+
+
+/* For Phone View */
+@media screen and (max-width: 320px){
+   
+
+
+}
+
+/* For small screens */
+@media screen and (min-width: 321px) and (max-width: 576px) {
+   
+
+}
+
+/* For medium screens */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  
+
+}
+
+/* For tablets or medium size laptops */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    
+
+
+}
+
+/* For larger laptops and desktops */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .box{
+        height: 55vh;
+    }
+
+    .content{
+        margin-top: 0%;
+        background: #0e0e0e;
+    }
+
+}
+
+
+/* For larger Desktop monitors */
+@media screen and (min-width: 1201px) and (max-width: 1560px) {
+    .box{
+        height: 62vh;
+    }
+
+    .content{
+        margin-top: 0%;
+        background: #9c0799;
+    }
+
+}

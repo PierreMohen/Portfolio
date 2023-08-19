@@ -24,12 +24,11 @@
 
 
   .container{
-    display: flex;
+    display: inline-block;
     width: 100%;
     height: auto;
 
     box-sizing: border-box;
-   
 
     flex-direction: column;
     
@@ -59,16 +58,16 @@
   }
 
 
-  @media screen and (max-width: 1400px)  {
-    .container{
-        width: 100%;
-    }
+//   @media screen and (max-width: 1400px)  {
+//     .container{
+//         width: 100%;
+//     }
     
-}
+// }
 
-@media screen and (min-width: 1400px)  {
-    .container{
-        width: 1400px;
-    }
+// @media screen and (min-width: 1600px)  {
+//     .container{
+//         width: 1600px;
+//     }
     
-}
+// }

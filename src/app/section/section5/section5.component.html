@@ -1,0 +1,16 @@
+<section>
+    <div class="title">
+        <h1>Section 5. Nothing can stop Us! </h1>
+    </div>
+    <div [ngClass]="{'container':'true'}"(mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+        <div class="bgAnimation" id="bgAnimation">
+            <div class="backgroundAnim"></div>
+        </div>
+        <div class="grid-container">
+            <div *ngFor="let item of gridItems" class="grid-item"></div>
+          </div>
+  </div>
+  
+  </section>
+  
+  
