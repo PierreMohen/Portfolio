@@ -1,20 +1,53 @@
- @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Alegreya:ital,wght@0,400;0,500;1,600&family=Lobster+Two&family=Roboto+Serif:opsz,wght@8..144,100&display=swap');
-
-
-
-    $pointer-events : visible;
-    $h1:2.5rem;
-    $h2:2rem;
-    $h3:1.5rem;
-    $p:1rem;
+@font-face {
+    font-family: 'Aesthetic_Romance';
     
+    src: url('../../assets/Font-family/Aesthetic_Romance/Aesthetic_Romance.ttf') format('truetype');
+
+    
+    /* Add more formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'STIXTwoText-VariableFont_wght';
+
+    src: url('../../assets/Font-family/STIXTwoText-VariableFont_wght.ttf') format('truetype');
+  }
+
+
+  
+  $pointer-events: visible;
+  $h1: 3rem;
+  $h2: 2.5rem;
+  $h3: 1.8rem;
+  $h4: 1.5rem;
+  $h5: 1.2rem;
+  $p: 1.3rem;
+  $color:azure;
+  $pcolor:rgb(231, 231, 231);
+  
 *{
-    font-family: 'Roboto Serif', serif;
     text-decoration: none;
 }
 
 
+:is(h1, h2, h3, h4, h5, h6) {
+    font-family: 'STIXTwoText-VariableFont_wght', sans-serif;
+    color: $color;
+    margin: 0;
+    padding: 0;
+}
+
+
+p{
+    font-family: 'Aesthetic_Romance';
+    letter-spacing: 2px;
+}
+  
+
 .firstletter{
+    font-family: 'STIXTwoText-VariableFont_wght', sans-serif;
     font-size: 20px;
     font-weight:lighter;
 }
@@ -229,14 +262,13 @@ section{
     top: 0;
     left: 0;
 
-    color:azure ;
-
     font-weight: bolder;
     font-size: $h3;
 }
 
 
 .text p{
+    color: $pcolor;
     font-size: $p;
     line-height: 25px;
     margin-top: 0%;
@@ -246,12 +278,12 @@ section{
     
 }
 
-.text h3{
-    font-size: $h3;
-    position: relative;
-    margin: 0;
+// .text h3{
+//     font-size: $h3;
+//     position: relative;
+//     margin: 0;
 
-}
+// }
 
 // ..........button animated..........
 .hireme{
@@ -270,14 +302,14 @@ section{
 }
 
 .hireme a{
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
 button {
     display: flex;
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
     
     box-sizing: border-box;
@@ -308,6 +340,16 @@ button {
     transition: color 0.7s ease-in-out, background-position 1s ease-in-out, box-shadow 0.5s ease-in-out;
     animation: buttontextanimation 20s infinite linear alternate;
     
+}
+
+button p{
+    width: auto;
+    height: auto;
+    
+    box-sizing: border-box;
+    
+    margin: 0;
+    padding: 0;
 }
 
 button:hover,
@@ -402,55 +444,64 @@ button:focus{
     height: 100%;
 
     box-sizing: border-box;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 
     top: 0;
     left: 0;
 
-    color: rgb(177, 203, 226);
-    font-size: $h3;
-    font-weight: 700;
-
-
-
 }
 
-.text2 span{
+.text2 h4{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: auto;
+
     box-sizing: border-box;
-    padding-bottom: 5%;
+    font-size: $h4;
+    
     animation: slideInText 1s linear forwards;
     transform: translateX(500%);
+    
 }
 
-.text2 span:first-child {
+.text2 h4:first-child {
+    top: 10%;
     animation-delay: 7s;
   }
 
   
-.text2 span:nth-child(2) {
+.text2 h4:nth-child(2) {
       animation-delay: 9.5s;
     }
     
-.text2 span:nth-child(3){
+.text2 p:nth-child(3){
     
     position: relative;
+    display: flex;
     width: auto;
     height: auto;
 
-    top: 7%;
-    padding: 5%;
+    box-sizing: border-box;
 
-    color: aliceblue;
+    bottom: 10%;
+    padding: 5%;
+    margin: 0;
+    
+    color: $pcolor;
 
     font-size: $p;
     font-style: italic;
-    font-weight: bolder;
-
+    font-weight: bold;
+    
     background:linear-gradient(45deg,rgb(128, 13, 215),rgb(130, 11, 146),rgb(176, 132, 22)) ;
-    animation-delay: 11s;
     border-radius: 10px;
+    
+    animation: slideInText 1s linear forwards;
+    transform: translateX(500%);
+    animation-delay: 11s;
     transition: 0s ease-in-out;
     
     }
