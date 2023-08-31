@@ -56,9 +56,11 @@ section{
     position: relative;
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 
     box-sizing: border-box;
+    flex-direction: column;
+    
 
     top: 0;
     left: 0;
@@ -116,8 +118,6 @@ section{
     margin: 0%;
     padding: 0%;
 
-  
-
 }
 
 
@@ -150,7 +150,7 @@ section{
     box-sizing: border-box;
 
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     top: 0;
@@ -194,7 +194,7 @@ section{
     position: relative;
     display: flex;
     width: 30%;
-    height: auto;
+    height: 55%;
 
     box-sizing: border-box;
     flex-direction: column;
@@ -202,7 +202,7 @@ section{
     top: 0%;
     left: 5%;
     padding-inline: 1%;
-    padding-block: 1%;
+    padding-block: 0%;
 
 
     background: linear-gradient(45deg,#c4e91f,#06ca1a,#e409f8,#c00986,#013162,#8f06ca,#06a6ca,#015cf8,#c7ca06);
@@ -216,8 +216,8 @@ section{
     content: '';
     display: flex;
     position: absolute;
-    width: 98.3%;
-    height: 97.6%;
+    width: 98.5%;
+    height: 97%;
     min-width: fit-content;
     min-height: fit-content;
 
@@ -225,7 +225,7 @@ section{
     flex-direction: column;
 
     left: 0.85%;
-    top: 1.25%;
+    top: 1.55%;
     
     text-align: start;
     word-break:keep-all;
@@ -245,10 +245,10 @@ section{
     box-sizing: border-box;
 
     color: azure;
-
+    
     font-weight: bold;
     font-size: $h3;
-
+    
 }
 
 .intro2{
@@ -264,6 +264,7 @@ section{
 
     font-weight: bolder;
     font-size: $h3;
+
 }
 
 
@@ -315,7 +316,7 @@ button {
     box-sizing: border-box;
     min-width: fit-content;
     min-height: fit-content;
-
+    
     cursor: pointer;
 
     justify-content: center;
@@ -398,7 +399,7 @@ button:focus{
     
     top: 0;
     right: 0;
-
+    
 }
 
 .pic1{
@@ -458,7 +459,7 @@ button:focus{
     display: flex;
     width: auto;
     height: auto;
-
+    
     box-sizing: border-box;
     font-size: $h4;
     

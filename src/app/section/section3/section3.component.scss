@@ -1,7 +1,55 @@
+@font-face {
+    font-family: 'Aesthetic_Romance';
+    
+    src: url('../../../assets/Font-family/Aesthetic_Romance/Aesthetic_Romance.ttf') format('truetype');
+
+    
+    /* Add more formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'STIXTwoText-VariableFont_wght';
+
+    src: url('../../../assets/Font-family/STIXTwoText-VariableFont_wght.ttf') format('truetype');
+  }
+
+
+  
+  $pointer-events: visible;
+  $h1: 3rem;
+  $h2: 2rem;
+  $h3: 1.8rem;
+  $h4: 1.5rem;
+  $h5: 1.2rem;
+  $h6: 1rem;
+  $p: 1.2rem;
+  $color:azure;
+  $pcolor: rgb(230, 231, 233);
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    font-family: 'STIXTwoText-VariableFont_wght', sans-serif;
+    color: $color;
+}
+
+    *p{
+        color: #e7e7e7;
+        font-family: 'Aesthetic_Romance',sans-serif;
+        font-size: $p;
+        
+        line-height: 1em;
+        letter-spacing: 2px;
+        word-break:keep-all;
+        
+        text-shadow: #000000 0px 0px 1px;
+    
+    }
+
 
 section{
     position: relative;
-    display: inline-block;
+    display: flex;
     width: 100%;
     height: 100vh;
     
@@ -13,7 +61,7 @@ section{
     
     background: linear-gradient(-45deg,black,rgb(203, 19, 19),#3701b4,rgb(92, 0, 184),rgb(203, 19, 19),black);
     border: 3px solid rgb(38, 38, 38);
-    animation: bganimation 20s forwards ease-in alternate;
+    animation: bganimation 20s forwards ease-in alternate ;
 }
 
 // ----------------------- work work hereeeeeeeeee bg animation---------------------------------------------
@@ -26,10 +74,10 @@ section{
 //   }
   
 //   .animated-section:hover {
-//     background-color: blue;
+    //     background-color: blue;
 //     animation: myAnimation 2s infinite alternate;
 //   }
-  
+
 //   @keyframes myAnimation {
 //     0% {
 //       background-color: blue;
@@ -41,7 +89,7 @@ section{
 //       background-color: blue;
 //     }
 //   }
-  
+
 
 
 // -----------------------hereeeeeeeeee above ---------------------------------------------
@@ -51,6 +99,13 @@ section{
     color: whitesmoke;
 }
 
+*button{
+    font-family: 'STIXTwoText-VariableFont_wght';
+    font-size: $h6;
+    font-weight: bold;
+
+}
+
 
 .title01{
     display: flex;
@@ -58,6 +113,7 @@ section{
     width: 100%;
     height: 10vh;
 
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
 
@@ -74,69 +130,90 @@ section{
 
 
 .container{
-    position: absolute;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-gap: 10px;
+
+    width: 100%;
+    height: 100%;
+    
+    box-sizing: border-box;
+    // flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu{
+    position: relative;
     display: flex;
     width: 100%;
-    height: auto;
-
-    box-sizing: border-box;
-    flex-direction: row;
-    
-
-    top: 20%;
-    left: 12%;
-
-    background: none;
-}
-
-.menu ul{
-    position: relative;
-    width: auto;
-    height: auto;
+    height: 100%;
     
     box-sizing: border-box;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
-    top: 10%;
+    top: 0;
     left: 0;
-
+    margin: 0;
+    padding: 0;
+    
+    color: whitesmoke;
+    
+    background: linear-gradient(120deg,rgb(92, 0, 184)45deg,rgb(154, 5, 5),#840808,black);
+    filter: blur(0px);
+    box-shadow: 0px 0px 0px rgba(#840808,0.6);
+    
 }
 
-.menu ul li{
+.button-container {
     position: relative;
     display: flex;
-    width: auto;
-    height: auto;
-    
+    width: 100%;
+    height: 100%;
+
     box-sizing: border-box;
-    top: 0;
-    left: 0;
-    
-    gap: 15px;
+
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
-}
 
-.menu ul li button{
+  }
+  
+  
+
+.menu button{
     position: relative;
-    width: auto;
-    height: auto;
+    width: 50%;
+    height: 15vh;
     
     box-sizing: border-box;
+
     left: 0;
     top: 0;
-    padding: 5px;
+    padding: 0;
+    margin: 0;
     
     background: #fcfafa;
     border-top : 3px solid #f48282;
     border-left : 3px solid #f48282;
     border-bottom : 3px solid #f48282;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 5px;
     
     transition:all 1s;
-
 }
 
-.menu ul li button:hover{
+.menu button:hover{
     color: #000;
     // box-shadow: 2px 2px 3px rgba(#000000,0.5);
     background: #d77e02;
@@ -146,39 +223,20 @@ section{
     z-index: 51;
 }
 
-.menu{
-    position: relative;
-    display: inline-block;
-    width: 10%;
-    height: auto;
-    
-    box-sizing: border-box;
-    flex-direction: column;
-    
-    top: 0;
-    right: 0;
-    
-    color: whitesmoke;
-    
-    background: linear-gradient(120deg,rgb(92, 0, 184)45deg,rgb(154, 5, 5),#840808,black);
-    filter: blur(0px);
-    box-shadow: 0px 0px 0px rgba(#840808,0.6);
-    opacity: 0.9;
-}
 
 .screen{
     position: relative;
-    display: inline-block;
-    width: 55%;
-    height: 69.8vh;
+    display: flex;
+    width: 100%;
+    height: 70vh;
     
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
-    top: 10%;
+    top: 0%;
     left: 0;
-    margin: 0%;
+    margin: 0% auto;
     padding: 0%;
     // background-image:url("../../../assets/708643.jpg");
     // background-size: cover;
@@ -186,7 +244,7 @@ section{
     box-shadow: 0px 0px 8px rgba(rgb(92, 3, 155),1);
     border: 3px solid #f48282;
     border-radius: 37px;
-    z-index: 20;
+    z-index: 19;
 }
 
 .screen img{
@@ -211,6 +269,7 @@ section{
     object-fit: cover;
     border-radius: 35px;
     
+    z-index: 22;
 }
 
 .screen video::-webkit-media-controls {
@@ -220,7 +279,7 @@ section{
 // ............Page Home..........
 
 .home{
-    position: absolute;
+    position: relative;
     display: flex;
     width: 350px;
     height: 100%;
@@ -259,52 +318,81 @@ section{
 //.........Page login content.........
 
 .login{
-    position: relative;
+    position: absolute;
     display: flex;
     width: 40%;
     height: 100%;
     
     box-sizing: border-box;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     
     top: 0;
     left: 0;
     padding-inline: 3%;
     
-    color: whitesmoke;
     background: linear-gradient(-45deg,rgba(39, 39, 39, 0.4),#1f1c2496,rgba(39, 39, 39, 0.4));
     backdrop-filter: blur(10px);
     border-radius: 35px 0px 0px 35px;
     box-shadow: 1px 0px 1px rgba(56, 56, 56, 0.729);
     
+    z-index: 24;
 }
 
-.login h1{
-    
+.ldiv1{
     position: relative;
+    display: flex;
     width: 100%;
     height: auto;
     
     box-sizing: border-box;
-    top: 5%;
-
-    text-align: center;
     justify-content: center;
+    align-items: center;
     
-    // border: 3px solid aliceblue;
+    top: 10%;
+    left: 0;
+    
     // border-radius: 30px;
 }
 
-form{
+
+.ldiv2{
     position: relative;
+    display: flex;
     width: 100%;
     height: auto;
 
     box-sizing: border-box;
-    top: 10%;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 5%;
     left: 0;
+
+    margin: 0;
+    padding-inline: 2%;
+
+    // border: 3px solid aliceblue;
+}
+
+
+
+.ldiv3{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 15%;
+    left: 0;
+    margin: 0%;
+    padding-block: 5%;
+
 }
 
 table{
@@ -321,28 +409,13 @@ table{
     top: 0;
     left: 0;
     
+    
 }
 
-.login p{
-    
-    position: relative ;
-    width: 100%;
-    height: auto;
-    
-    box-sizing: border-box;
-    font-size: 15px;
-    
-    top: 5%;
-    left: 0;
-    
-    text-align: center;
-    justify-content: center;
-    
-}
 
 .email{
     position: relative;
-    width: 90%;
+    width: 100%;
     height: auto;
 
     box-sizing: border-box;
@@ -351,7 +424,7 @@ table{
     left: 0;
 
     outline: none;
-    font-size: 1em;
+    font-size: $h5;
     
     background: transparent;
     border: none;
@@ -362,7 +435,7 @@ table{
 
 .pw{
     position: relative;
-    width: 90%;
+    width: 100%;
     height: auto;
 
     box-sizing: border-box;
@@ -372,7 +445,7 @@ table{
     top: 0;
     left: 0;
     
-    font-size: 1em;
+    font-size: $h5;
     
     background: transparent;
     border: none;
@@ -380,38 +453,34 @@ table{
 
 .icon{
     position: absolute;
-    left: 92%;
+    left: 90%;
     opacity: 0.3;
 }
 
 .tr{
     position: relative;
-    width: 90%;
+    display: flex;
+    width: 100%;
     height: auto;
 
     box-sizing: border-box;    
     flex-direction: row;
-    margin-top: 5%;
-    margin-bottom: 5%;
 
     top: 0;
     left: 0;
 
     border-bottom: 2px solid #cf7b0c;
     border-radius: 5px;
-}
 
-.trconnection{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: auto;
+    font-family: 'Aesthetic_Romance',sans-serif;
+    font-size: $p;
+    color: $pcolor;
 
-    box-sizing: border-box;
-
-    top: 0;
-    left: 0;
-
+    line-height: 1em;
+    letter-spacing: 2px;
+    word-break:keep-all;
+    
+    text-shadow: #191919 0px 0px 1px;
 }
 
 .connection{
@@ -419,17 +488,24 @@ table{
     display: flex;
     width: 100%;
     height: auto;
-    
-    box-sizing: border-box;
-    justify-content: space-between;
-    align-items: center;
+
+    box-sizing: border-box;    
     flex-direction: row;
-    align-items: center;
-    
+
     top: 0;
-    left: 0;    
-    margin-top: 10%;
+    left: 0;
+
+    font-family: 'Aesthetic_Romance',sans-serif;
+    // font-size: $p;
+    color: $pcolor;
+
+    line-height: 1em;
+    letter-spacing: 2px;
+    word-break:keep-all;
     
+    text-shadow: #191919 0px 0px 1px;
+    
+
 }
 
 .connectiona{
@@ -439,13 +515,17 @@ table{
     height: auto;
     
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     
     top: 0;
-    left: 5%;
-    
-    font-size: 14px;
-    
+    left: 0;
+     
+}
+
+.connectiona h5{
+    margin-inline-start: 5%;
 }
 
 .connectionb{
@@ -455,15 +535,17 @@ table{
     height: auto;
     
     box-sizing: border-box;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     
     top: 0;
-    right: 5%;
+    left: 0;
 
-    font-size: 14px;
-    
 }
+
+// .connectionb h5{
+
+// }
 
 .btnform{
     position: relative;
@@ -475,7 +557,7 @@ table{
     
     top: 0;
     left: 0;
-    margin-top: 70%;
+    
     
     border-radius: 0px;
 }
@@ -486,6 +568,7 @@ table{
     display: flex;
     width: 100%;
     height: auto;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -495,6 +578,33 @@ table{
 
     color: whitesmoke;
     z-index: 1000;
+}
+
+.library{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: #8c8c8c;
+    border: 2px solid gold;
+}
+
+.video{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    background: #8e2cde;
 }
 
 @keyframes bganimation{

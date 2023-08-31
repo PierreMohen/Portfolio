@@ -9,6 +9,7 @@ import { Section4Component } from './section/section4/section4.component';
 import { Section5Component } from './section/section5/section5.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes),
-  BrowserAnimationsModule
+  BrowserAnimationsModule,
+  NgxHideOnScrollModule
   ],
   exports: [RouterModule]
 })

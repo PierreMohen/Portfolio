@@ -9,7 +9,7 @@ import { Section2Component } from './section/section2/section2.component';
 import { Section3Component } from './section/section3/section3.component';
 import { Section4Component } from './section/section4/section4.component';
 import { Section5Component } from './section/section5/section5.component';
-import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+import { NgxHideOnScrollDirective, NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 import { CapitalizeFirstLetterArrayPipe } from './pipes/capitalize-first-letter-array.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { ColorComponent } from './components/color/color.component';
@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FormsModule } from '@angular/forms';
 library.add(faCoffee);
 
 @NgModule({
@@ -46,6 +47,7 @@ library.add(faCoffee);
     HttpClientModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
+    FormsModule,
   
 
   ],

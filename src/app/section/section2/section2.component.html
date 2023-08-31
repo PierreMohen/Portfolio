@@ -1,14 +1,77 @@
 <section id="section2">
     <div class="title"><h2>Section 2. Works !</h2></div>
-    
-    <div [ngClass]="{'container':true}">
 
-        <div [ngClass]="{'text':true}">
-            <h2>Title...</h2>
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perspiciatis impedit nostrum minima cupiditate repudiandae sit beatae officia quas, voluptatem deleniti iusto assumenda voluptatum quae eaque possimus. Harum, sapiente possimus.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima inventore perspiciatis unde repellat sit adipisci dolorem vitae pariatur ipsum. Vel repellendus iure labore deserunt eveniet in sunt neque hic at.</p>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+    <div class="video-container">
+      <video #videoPlayer controls>
+        <source src="../../../assets/pictures/►Mahoutsukai-no-Yome-「-AMV-」-Beautiful-Creatures♫.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <div class="volume-control">
+      <input type="range" min="0" max="1" step="0.1" [(ngModel)]="volume" (input)="updateVolume()">
+    </div>
+    
+
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+          <h2>Player</h2>
+          <p>{{ pScore }}</p>
         </div>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p>{{ cScore }}</p>
+        </div>
+      </div>
+    
+      <div class="intro" [ngClass]="{ 'fadeOut': !introScreenVisible }">
+        <h1>Rock Paper and Scissors</h1>
+        <button (click)="startGame()">Let's Play</button>
+      </div>
+    
+      <div class="match" [ngClass]="{ 'fadeIn': matchScreenVisible }">
+        <h2 class="winner">{{ winnerText }}</h2>
+        <div class="hands">
+          <img class="player-hand" [src]="'./../../../assets/pictures/' + playerChoice + '.png'" alt="" />
+          <img class="computer-hand" [src]="'./../../../assets/pictures/' + computerChoice + '.png'" alt="" />
+        </div>
+        <div class="options">
+          <button class="rock" (click)="playMatch('rock')">rock</button>
+          <button class="paper" (click)="playMatch('paper')">paper</button>
+          <button class="scissors" (click)="playMatch('scissors')">scissors</button>
+        </div>
+      </div>
+    </section>
+    
+    
+    <div class="button-container">
+      <button (click)="toggleDiv('div1')">Toggle Div 1</button>
+      <button (click)="toggleDiv('div2')">Toggle Div 2</button>
+    </div>
+    
+    <div class="sliding-div1" [@slideAnimation]="divStates['div1']"></div>
+    <div class="sliding-div2" [@slideAnimation]="divStates['div2']"></div>
+    
+
+    <div>
+        <button *ngFor="let button of buttons; let i = index" (click)="showDiv(i)">{{ button }}</button>
+      </div>
+      
+      <div *ngFor="let divVisible of divVisibility; let i = index"
+     [ngClass]="{
+       'slide-transition': divVisible,
+       'div-style-blue': divVisible && i === 0,
+       'div-style-green': divVisible && i === 1,
+       'div-style-pink': divVisible && i === 2,
+       'div-style-gold': divVisible && i === 3
+     }">
+  <div *ngIf="divVisible">Div {{ i + 1 }} is visible</div>
+</div>
+
+      
+      
+
         <!-- <div ngClass="pics">
             <picture>
                 <source srcset="../../../assets/pictures/4k Wallpapers download 2023.avif" type="image/avif"/>
@@ -21,7 +84,6 @@
             <img src="../../../assets/pictures/pxfuel.jpg" width="200px" alt="kakashi">
             <img srcset="../../../assets/pictures/1686229907254.JPG 1.5x , 1686255952442.JPG 1.5x 900w" alt="black and white pic">
         </div> -->
-    </div>
     <details>
         <summary>i ate 15 scones in one day</summary>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni et architecto dolorum dolore optio soluta maiores asperiores animi eos ex fugit voluptates cumque cupiditate eligendi quis nihil mollitia quo!</p>
@@ -53,4 +115,11 @@
 <br>
 <div class="bg9"></div>
 <br>
-</section>
+
+<br>
+<div class="hover-container">
+    <div class="hover-trigger" (mouseenter)="isActive = true" (mouseleave)="isActive = false">Hover me</div>
+    <div class="hidden-content" *ngIf="isActive">I appear on hover</div>
+  </div>
+  <button (click)="toggleActive()">Toggle Hidden Content</button>
+  

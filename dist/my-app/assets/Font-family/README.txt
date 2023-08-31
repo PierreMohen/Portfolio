@@ -1,30 +1,26 @@
-Alegreya Variable Font
-======================
+STIX Two Text Variable Font
+===========================
 
-This download contains Alegreya as both variable fonts and static fonts.
+This download contains STIX Two Text as both variable fonts and static fonts.
 
-Alegreya is a variable font with this axis:
+STIX Two Text is a variable font with this axis:
   wght
 
 This means all the styles are contained in these files:
-  Alegreya-VariableFont_wght.ttf
-  Alegreya-Italic-VariableFont_wght.ttf
+  STIXTwoText-VariableFont_wght.ttf
+  STIXTwoText-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Alegreya:
-  static/Alegreya-Regular.ttf
-  static/Alegreya-Medium.ttf
-  static/Alegreya-SemiBold.ttf
-  static/Alegreya-Bold.ttf
-  static/Alegreya-ExtraBold.ttf
-  static/Alegreya-Black.ttf
-  static/Alegreya-Italic.ttf
-  static/Alegreya-MediumItalic.ttf
-  static/Alegreya-SemiBoldItalic.ttf
-  static/Alegreya-BoldItalic.ttf
-  static/Alegreya-ExtraBoldItalic.ttf
-  static/Alegreya-BlackItalic.ttf
+in those cases you can use the static font files for STIX Two Text:
+  static/STIXTwoText-Regular.ttf
+  static/STIXTwoText-Medium.ttf
+  static/STIXTwoText-SemiBold.ttf
+  static/STIXTwoText-Bold.ttf
+  static/STIXTwoText-Italic.ttf
+  static/STIXTwoText-MediumItalic.ttf
+  static/STIXTwoText-SemiBoldItalic.ttf
+  static/STIXTwoText-BoldItalic.ttf
 
 Get started
 -----------

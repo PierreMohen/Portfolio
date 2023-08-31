@@ -19,13 +19,14 @@
   
   $pointer-events: visible;
   $h1: 3rem;
-  $h2: 2.5rem;
+  $h2: 2rem;
   $h3: 1.8rem;
   $h4: 1.5rem;
   $h5: 1.2rem;
+  $h6: 1rem;
   $p: 1.2rem;
   $color:azure;
-  $pcolor: rgb(230, 231, 233);;
+  $pcolor: rgb(230, 231, 233);
 
   :is(h1, h2, h3, h4, h5, h6) {
     font-family: 'STIXTwoText-VariableFont_wght', sans-serif;
@@ -36,16 +37,6 @@
 text-decoration: none;
 }
 
-p{
-    font-family: 'Aesthetic_Romance',sans-serif;
-    margin-block: 5%;
-    font-size: $p;
-    line-height: 1em;
-    letter-spacing: 2px;
-    
-    word-break:keep-all;
-    margin: 0;
-}
 
 section{
     position: relative;
@@ -145,9 +136,9 @@ section{
     top: 0;
     margin-inline: 2%;
     
-    background-image:url("../../../assets/pictures/4k-Wallpapers-download-2023.avif"),
-                     url("../../../assets/pictures/4k-Wallpapers-download-2023.webp"),
-                     url("../../../assets/pictures/4k-2023.jpg");
+    // background-image:url("../../../assets/pictures/4k-Wallpapers-download-2023.avif"),
+    //                  url("../../../assets/pictures/4k-Wallpapers-download-2023.webp"),
+    //                  url("../../../assets/pictures/4k-2023.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,11 +177,17 @@ section{
     transition: 0.5s;
     z-index: 25;
 }
-
 .box:hover{
+
     box-shadow: 0px 0px 30px #7807da ;
     transition: 0.53s ease-in-out;
 }
+
+.box:hover .bgfilter{
+    opacity: 0.4;
+    transition: opacity 0.5s ease-in-out;
+}
+
 
 .box:hover .poster::before{
     bottom: 0px;
@@ -214,6 +211,7 @@ section{
     filter: blur(5px);
 }
 
+
 .details{
     position: absolute;
     display: flex;
@@ -224,7 +222,7 @@ section{
     justify-content: space-around;
     align-items: center;
     
-    bottom: -65%;
+    bottom: -68%;
     left: 0;
     right: 0;
     
@@ -235,14 +233,170 @@ section{
     color: $color;
     border-top: #000000 3px solid;
     transition: 0.5s;
-
-    z-index: 30;
     
+    z-index: 30;
     
 }
 
 
-.title0{
+//------------ absolute mix-blend-mode bgackground  1 card-----------------------
+
+.onoff{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    z-index: 29;
+
+}
+
+.allsubposter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    
+    bottom: 0;
+    left: 0;
+    
+    background: radial-gradient(rgb(236, 112, 3) 50%,#ff9d00 100%,#fff);
+    overflow: hidden;
+    z-index: 28;
+}
+
+.subposter1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../../assets/pictures/Splash-PNG.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.subposter1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background: url('../../../assets/pictures/Demon\ Slayer\ wallpaper\ by\ icekingcold\ -\ Download\ on\ ZEDGE™\ _\ c653.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+}
+//------------ absolute mix-blend-mode bgackground  2 card-----------------------
+
+.allsubposter2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    
+    bottom: 0;
+    left: 0;
+    
+    background: radial-gradient(rgb(82, 18, 220) 50%,#000000 100%);
+    overflow: hidden;
+    z-index: 28;
+}
+
+.subposter2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../../assets/pictures/Paint-Splatter-Transparent.png');
+    background-position: top right 60%;
+    background-size: cover;
+    
+}
+
+.subposter2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background: url('../../../assets/pictures/pxfuel\ \(5\).jpg');
+    background-size:contain;
+    background-position: center;
+    mix-blend-mode: screen;
+    
+}
+
+//------------ absolute mix-blend-mode bgackground  3 card-----------------------
+
+.allsubposter3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    
+    bottom: 0;
+    left: 0;
+    
+    // background: radial-gradient(rgb(82, 18, 220) 50%,#000000 100%);
+    overflow: hidden;
+    z-index: 28;
+}
+
+.subposter3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../../assets/pictures/Paint-Splatter-Transparent.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.subposter3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background: url('../../../assets/pictures/4k-2023.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+}
+
+.bgfilter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    background: #000000c5;
+
+    opacity: 0;
+    z-index: 30;
+    transition: 0.8s ease-in-out ;
+
+}
+
+// -----------------------End mix-blend-mode-----------------------
+
+
+.div1{
     width: 100%;
     height: auto;
 
@@ -251,64 +405,121 @@ section{
     top: 0;
     left: 0;
 
-    margin: 0;
+    margin-block: 3%;
+    padding: 0%;
 
-    font-size: $h2;
+    font-size: $h4;
     color: $color;
     font-weight: 600;
 
 }
 
-.allpassions{
+.div1 h2{
+    margin: 0;
+    line-height: 95%;
+    text-shadow: #575757 0px 0px 2px;
+}
+
+
+
+
+.div2{
     display: flex;
     position: relative;
     width: 100%;
     height: auto;
 
     box-sizing: border-box;
-
-    top: 0;
-    left: 0;
-    padding-block: 3%;
+    
     justify-content: space-between;
     align-items: center;
 
+    top: 0;
+    left: 0;
+    padding: 0%;
+    margin-block: 2%;
+
 }
 
-.content{
+.div2 h5{
+    display: flex;
+    width: auto;
+    height: auto;
+
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 3%;
+    
+    font-size: $h6;
+
+    letter-spacing: 1px;
+    
+}
+
+.passion{
+    width: auto;
+    height: auto;
+    letter-spacing: 1px;
+    background: radial-gradient(red 20%,rgb(223, 134, 1) ) ;
+}
+
+.hobbies{
+    width: auto;
+    height: auto;
+    letter-spacing: 1px;
+    background: radial-gradient(blue ,rgb(12, 78, 245) 95% ) ;
+}
+
+
+.div3{
     position: relative;
     display: flex;
     width: 100%;
-    height: 55%;
+    height: auto;
 
     box-sizing: border-box;
+
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 
     top: 0;
     left: 0;
-    margin: 0%;
+
+    margin-block: 2%;
+
+    backdrop-filter: blur(10px);
+    
+    background: rgba(0, 0, 0, 0.201);
+    
+    box-shadow: 0px 0px 6px black;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.207);
 
 }
 
-.content h5{
-    position: relative;
-    width: 100%;
-    height: auto;
+.div3 p{
+    font-family: 'Aesthetic_Romance',sans-serif;
+    color: #e7e7e7;
+    font-size: $p;
+    line-height: 1em;
+    letter-spacing: 2px;
+    margin-bottom: 1%;
 
-    box-sizing: border-box;
+    margin-left: 2%;
+    padding-inline-start: 1%;
+    padding-block: 0%;
+    
+    text-shadow: #000000 0px 0px 1px;
+    
+    word-break:keep-all;
 
-    top: 0%;
-    left: 0;
-    padding: 2px;
-    margin: 0;
-
-    text-align: center;
-    font-size:$h5;
-
-    border-radius: 5px;
-    background: #109148;
 }
 
 .details:hover{
@@ -316,30 +527,28 @@ section{
 }
 
 .subtitle{
+    display: flex;
+    position: relative;
+
     box-sizing: border-box;
-    padding-block: 1%;
+    justify-content: center;
+    align-items: center;
+
     padding-inline: 2%;
+    padding-block: 2%;
+
     margin: 0;
-    // border: 2px solid aliceblue;
+ 
     border-radius: 5px;
 }
 
-.passion{
-    box-sizing: border-box;
-    background: radial-gradient(red 20%,rgb(223, 134, 1) ) ;
-}
 
-.hobbies{
-    box-sizing: border-box;
-    background: radial-gradient(blue ,rgb(12, 78, 245) 95% ) ;
-}
-
-.pics{
+.div4{
     position: relative;
     display: flex;
     width: 100%;
-    height: 15%;
-
+    height: auto;
+    
     box-sizing: border-box;
 
     justify-content: center;
@@ -348,12 +557,12 @@ section{
     
     top: 0%;
     left: 0;
-    margin: 0;
+    margin-block: 2%;
 
 }
 
 
-.pics ul{
+.div4 .divul{
     position: relative;
     display: flex;
     width: 100%;
@@ -361,7 +570,7 @@ section{
 
     box-sizing: border-box;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: row;
     
     left: 0;
@@ -398,18 +607,31 @@ section{
     background-position: center;
 
     border-radius: 50%/50%;
-    border: $color 2px solid;
-
+    // border: $color 2px solid;
+    outline-offset: 2px ;
+    transition: 0.5s ease-in-out;
+    
 }
+
+.image-item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px cornflowerblue;
+    outline: 3px solid cornflowerblue;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
 
 .image-item:nth-child(1){
     background-image: url("../../../assets/pictures/1686229731953.JPG");
 }
+
 .image-item:nth-child(2){
     background-image: url("../../../assets/pictures/pxfuel.jpg");
 }
 .image-item:nth-child(3){
-    background-image: url("../../../assets/pictures/pic.jpg");
+    background-image: url("../../../assets/pictures/anime-naruto-pain_naruto-469665.jpeg");
+    
 }
 
 
@@ -626,7 +848,16 @@ section{
 
 /* For small screens */
 @media screen and (min-width: 321px) and (max-width: 576px) {
-   
+    .container{
+        flex-wrap: wrap;
+        width: 100%; /* Adjust the width and margin as needed */
+        margin: 0;
+    }
+
+    .box{
+        width: 70%;
+        height: 50%;
+    }
 
 }
 
