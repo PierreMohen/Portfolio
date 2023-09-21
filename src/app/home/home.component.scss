@@ -161,18 +161,19 @@ section{
 .profil1{
     position: relative;
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 
     box-sizing: border-box;
 
+    top: 5px;
 
     background-image: url('../../assets/pictures/1686229731953.JPG');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     
-    border-radius: 20% 20%/20% 0%;
+    border-radius: 5px;
     border: 3px solid #06a6ca;
 }
 

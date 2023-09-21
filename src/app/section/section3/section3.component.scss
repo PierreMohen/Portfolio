@@ -187,7 +187,7 @@ section{
     align-items: center;
     flex-direction: column;
 
-
+    // border: 2px solid cornflowerblue;
   }
   
   
@@ -351,6 +351,7 @@ section{
     align-items: center;
     
     top: 10%;
+    transform: translateX();
     left: 0;
     
     // border-radius: 30px;
@@ -590,8 +591,9 @@ table{
     justify-content: center;
     align-items: flex-start;
 
-    background: #8c8c8c;
-    border: 2px solid gold;
+    backdrop-filter: blur(20px);
+    // background: #8c8c8c83;
+    // border: 2px solid cornflowerblue;
 }
 
 .video{
@@ -604,7 +606,8 @@ table{
     justify-content: center;
     align-items: center;
 
-    background: #8e2cde;
+    backdrop-filter: blur(20px);
+    background: #8e2cde83;
 }
 
 @keyframes bganimation{

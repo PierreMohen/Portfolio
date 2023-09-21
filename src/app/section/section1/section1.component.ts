@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, HostListener,AfterViewInit, Renderer2 } from '@angular/core';
-import { faTv,faGamepad,faFutbolBall,faBasketball,faMusic,faCoffee,faCake } from '@fortawesome/free-solid-svg-icons';
+import { faTv,faGamepad,faFutbolBall,faBasketball,faMusic,faCoffee,faCake,faSmile,faLemon } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-section1',
@@ -15,7 +15,8 @@ export class Section1Component implements OnInit,AfterViewInit {
   basket = faBasketball;
   drink = faCoffee;
   cake = faCake;
-
+  smile = faSmile;
+  lemon = faLemon;
   constructor(private el: ElementRef,private renderer: Renderer2) {}
 
   ngOnInit() {}

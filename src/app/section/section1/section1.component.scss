@@ -177,6 +177,11 @@ section{
     transition: 0.5s;
     z-index: 25;
 }
+
+.box:hover .details{
+    transition: 0.5s ease-in-out;
+}
+
 .box:hover{
 
     box-shadow: 0px 0px 30px #7807da ;
@@ -184,7 +189,8 @@ section{
 }
 
 .box:hover .bgfilter{
-    opacity: 0.4;
+    background: linear-gradient((-45deg),rgb(9, 60, 211) 10%,rgb(0, 0, 0));
+    opacity: 0.9;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -232,7 +238,7 @@ section{
     
     color: $color;
     border-top: #000000 3px solid;
-    transition: 0.5s;
+    transition: 1s ease-in-out;
     
     z-index: 30;
     
@@ -356,6 +362,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
+
     background: url('../../../assets/pictures/Paint-Splatter-Transparent.png');
     background-position: center;
     background-size: cover;
@@ -365,16 +372,19 @@ section{
 .subposter3::before{
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     min-height: 100%;
     width: 100%;
     height: 100%;
+
+    top: 0;
+    left: 0;
+    
     background: url('../../../assets/pictures/4k-2023.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
     mix-blend-mode: screen;
 }
 
@@ -385,11 +395,11 @@ section{
 
     box-sizing: border-box;
 
-    background: #000000c5;
-
+    background: linear-gradient((-45deg),rgb(9, 60, 211) 10%,rgb(0, 0, 0));
     opacity: 0;
     z-index: 30;
-    transition: 0.8s ease-in-out ;
+    // transition: 0.8s ease-in-out ;
+    transition: opacity 1.5s ease-in-out;
 
 }
 
@@ -496,7 +506,7 @@ section{
 
     backdrop-filter: blur(10px);
     
-    background: rgba(0, 0, 0, 0.201);
+    background: linear-gradient((-45deg), rgb(137, 10, 126),#034cc9c4, rgb(137, 10, 126));
     
     box-shadow: 0px 0px 6px black;
     border-radius: 5px;
