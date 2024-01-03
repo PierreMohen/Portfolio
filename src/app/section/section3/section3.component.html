@@ -1,6 +1,12 @@
+<article>
+    <div class="subarticle1"></div>
+    <div class="subarticle2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates explicabo nulla natus voluptas quia doloremque sequi quod dolorem accusantium dolorum! Vero delectus rem ab in nostrum saepe blanditiis, necessitatibus culpa?</p></div>
+    
+</article>
+
 <section id="section3" ngClass="animated-section" #sectionElement>
     <div ngClass="title01">
-        <h2>Rent Me!</h2>
+        <h2>Rent Me !</h2>
     </div>
     <div ngClass="container">
         <!-- <section class="animated-section"></section> -->
@@ -14,6 +20,7 @@
             </ul>
             -->
             <div class="button-container">
+                <button (click)="toggleMute()">{{ isMuted ? 'Unmute' : 'Mute' }}&nbsp;<fa-icon [icon]="song" ngClass="iconsong"></fa-icon></button>
                 <button (click)="toggleDiv('div1')">Login</button>
                 <button (click)="toggleDiv('div2')">register</button>
               </div>
@@ -23,7 +30,7 @@
 
         <div ngClass="screen">
 
-            <video controls autoplay [muted]="true" frameborder="0" loop>
+            <video #videoPlayer controls autoplay [muted]="isMuted" frameborder="0" loop>
                
                 <!-- MP4 format (a widely supported video format) -->
                 <source
@@ -43,50 +50,53 @@
             <!-- ......Login page ...animated-div containing the login -->
             
             <div ngClass="login" [@slideAnimation1]="divStates['div1']" >
-                <div class="ldiv1">
-                    <h1>Login &nbsp;Account</h1>
-                </div>
 
-                <div class="ldiv2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem qui sunt saepe odit illo sit.</p>
-                </div>
+                <div class="logincontent">
 
-                <div class="ldiv3">
-                    <form> 
-                        <table>
-                            <tr>
-                                <div ngClass="tr"> 
-                                    <input ngClass="email" type="email" name="email" id="email" placeholder="Email" required><fa-icon [icon]="mail" ngClass="icon"></fa-icon>
-                                </div>
-                            </tr>
+                    <div class="ldiv1">
+                        <h1>Login &nbsp;Account</h1>
+                    </div>
+
+                    <div class="ldiv2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem qui sunt saepe odit illo sit.</p>
+                    </div>
+
+                    <div class="ldiv3">
+                        <form> 
+                            <table>
+                                <tr>
+                                    <div ngClass="tr"> 
+                                        <input ngClass="email" type="email" name="email" id="email" placeholder="Email" required><fa-icon [icon]="mail" ngClass="icon"></fa-icon>
+                                    </div>
+                                </tr>
 <br>
-                            <tr>
-                                <div ngClass="tr">
-                                    <input ngClass="pw" type="password" name="password" id="password" placeholder="Password" required><fa-icon [icon]="password" ngClass="icon"></fa-icon>
-                                </div>
-                            </tr>
+                                <tr>
+                                    <div ngClass="tr">
+                                        <input ngClass="pw" type="password" name="password" id="password" placeholder="Password" required><fa-icon [icon]="password" ngClass="icon"></fa-icon>
+                                    </div>
+                                </tr>
                         
-                            <tr>
-                                <div ngClass="connection">
-                                    <div ngClass="connectiona">
-                                        <input type="checkbox" name="" id="">
-                                        <h5> Stay connected?</h5>
+                                <tr>
+                                    <div ngClass="connection">
+                                        <div ngClass="connectiona">
+                                            <input type="checkbox" name="" id="">
+                                            <h5> Stay connected?</h5>
+                                        </div>
+
+                                        <div ngClass="connectionb">
+                                            <h5><a>Password?</a></h5>
+                                        </div>
                                     </div>
+                                </tr>
 
-                                    <div ngClass="connectionb">
-                                        <h5><a>Password?</a></h5>
-                                    </div>
-                                </div>
-                            </tr>
+                                <tr>
+                                    <button type="submit" ngClass="btnform">Connect</button>
+                                </tr>
 
-                            <tr>
-                                <button type="submit" ngClass="btnform">Connect</button>
-                            </tr>
-
-                        </table>
-                    </form>
+                            </table>
+                        </form>
+                    </div>
                 </div>
-                
             </div>
             <!-- end of the animated div login -->
 
@@ -106,7 +116,13 @@
         </div>
 
         <div class="library">
-            <div class="video"><h1>Video library 1</h1></div>
+            <div class="headtitle"><h1>Video library 1</h1></div>
+            <div ngClass="video">
+                <div class="smallscreen"></div>
+                <div class="description"></div>
+            
+            </div>
+
         </div>
     </div>
 </section>

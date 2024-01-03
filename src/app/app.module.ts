@@ -20,6 +20,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FormsModule } from '@angular/forms';
+import { DesignlayoutComponent } from './designlayout/designlayout.component';
+
+
 library.add(faCoffee);
 
 @NgModule({
@@ -35,6 +38,10 @@ library.add(faCoffee);
     ColorComponent,
     FooterComponent,
     Section5Component,
+    DesignlayoutComponent,
+    
+
+  
   
     
     

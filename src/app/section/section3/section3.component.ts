@@ -1,8 +1,7 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
-
 import { CustomerService } from 'src/app/Services/customer.service';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { faEnvelope, faLock,faHome,faCar,faMap } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLock,faHome,faCar,faMap,faMusic } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-section3',
@@ -22,11 +21,28 @@ import { faEnvelope, faLock,faHome,faCar,faMap } from '@fortawesome/free-solid-s
     state('visible', style({ transform: 'translateX(0)',opacity: 1 })),
     transition('hidden => visible', animate('1.4s ease-in-out')),
     transition('visible => hidden', animate('1.2s ease-in-out')),
-  ]),
+  ])
+  ,
+
+ 
 ],
 })
 
 export class Section3Component implements OnInit {
+  @ViewChild('videoPlayer', { static: false }) videoElement!: ElementRef;
+  isMuted = true;
+
+  toggleMute() {
+    const video: HTMLVideoElement = this.videoElement.nativeElement;
+  
+    if (this.isMuted) {
+      video.muted = false;
+    } else {
+      video.muted = true;
+    }
+  
+    this.isMuted = !this.isMuted;
+  }
 
   divStates: { [key: string]: string } = {
     div1: 'hidden',
@@ -50,6 +66,7 @@ export class Section3Component implements OnInit {
   home = faHome;
   car = faCar;
   map = faMap;
+  song = faMusic;
 
 
   // divs = [

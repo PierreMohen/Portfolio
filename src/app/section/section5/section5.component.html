@@ -1,18 +1,72 @@
-<section>
+<section (mouseenter)="isActive = true" (mouseleave)="isActive = false">
     <div class="title">
-        <h1>Nothing can stop Us! </h1>
+        <h1> Skills ! </h1>
     </div>
     
     <div [ngClass]="{'container':'true'}"(mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
         <div class="bgAnimation" id="bgAnimation">
             <div class="backgroundAnim"></div>
-        </div>
-        
+        </div> 
+
         <div class="grid-container">
             <div *ngFor="let item of gridItems" class="grid-item"></div>
+        </div>
+        
+        <div class="gallery"(mouseenter)="isActive = true" (mouseleave)="isActive = false">
+            <div class="progressbar">
+                <div class="circle1">
+                    <div class="percentage">
+                        65%
+                    </div>
+                </div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63"/>
+                            <stop offset="100%" stop-color="#673ab7"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>
+            
+            <!-- <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div> -->
+            <table colspan="2">
+                <tr>
+                    <th>Tasks</th>
+                    <th>Done</th>
+                </tr>
+                <tr>
+                    <td>Fully Responsive </td>
+                    <td>okay</td>
+                </tr>
+                <tr>
+                    <td>Functional</td>
+                </tr>
+            </table>
         </div>
     </div>
   
   </section>
+  
+  
+  <script>
+    let number = document.getElementById('number');
+    let counter = 0;
+    setInterval(()=>{
+        if(counter == 65){
+            clearInterval();
+        }
+        else{
+            
+            counter +=1;
+            number.innerHTML=counter + "%";
+        }
+    }, 30);
+
+  </script>
   
   

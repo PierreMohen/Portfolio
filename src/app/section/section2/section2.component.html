@@ -1,6 +1,7 @@
-<section id="section2">
+<section id="section2"(mouseenter)="isActive = true" (mouseleave)="isActive = false">
     <div class="title"><h2>Section 2. Works !</h2></div>
 
+    
     <div class="video-container">
       <video #videoPlayer controls>
         <source src="../../../assets/pictures/►Mahoutsukai-no-Yome-「-AMV-」-Beautiful-Creatures♫.webm" type="video/mp4">
@@ -12,38 +13,18 @@
       <input type="range" min="0" max="1" step="0.1" [(ngModel)]="volume" (input)="updateVolume()">
     </div>
     
-
-    <section class="game">
-      <div class="score">
-        <div class="player-score">
-          <h2>Player</h2>
-          <p>{{ pScore }}</p>
-        </div>
-        <div class="computer-score">
-          <h2>Computer</h2>
-          <p>{{ cScore }}</p>
-        </div>
+    <div class="container2">
+      <div class="box">
+        <span style="--i:1;"><img src="../../../assets/pictures/1686229731953.JPG" alt=""></span>
+        <span style="--i:2;"><img src="../../../assets/pictures/1686229731953.JPG" alt=""></span>
+        <span style="--i:3;"><img src="../../../assets/pictures/1686229731953.JPG" alt=""></span>
+        <span style="--i:4;"><img src="../../../assets/pictures/1686229731953.JPG" alt=""></span>
+        <span style="--i:5;"><img src="../../../assets/pictures/1686229731953.JPG" alt=""></span>
+        <span style="--i:6;"><img src="../../../assets/pictures/1686229731953.JPG" alt=""></span>
+        <span style="--i:7;"><img src="../../../assets/pictures/1686229731953.JPG" alt=""></span>
+        <span style="--i:8;"><img src="../../../assets/pictures/1686229731953.JPG" alt=""></span>
       </div>
-    
-      <div class="intro" [ngClass]="{ 'fadeOut': !introScreenVisible }">
-        <h1>Rock Paper and Scissors</h1>
-        <button (click)="startGame()">Let's Play</button>
-      </div>
-    
-      <div class="match" [ngClass]="{ 'fadeIn': matchScreenVisible }">
-        <h2 class="winner">{{ winnerText }}</h2>
-        <div class="hands">
-          <img class="player-hand" [src]="'./../../../assets/pictures/' + playerChoice + '.png'" alt="" />
-          <img class="computer-hand" [src]="'./../../../assets/pictures/' + computerChoice + '.png'" alt="" />
-        </div>
-        <div class="options">
-          <button class="rock" (click)="playMatch('rock')">rock</button>
-          <button class="paper" (click)="playMatch('paper')">paper</button>
-          <button class="scissors" (click)="playMatch('scissors')">scissors</button>
-        </div>
-      </div>
-    </section>
-    
+    </div>
     
     <div class="button-container">
       <button (click)="toggleDiv('div1')">Toggle Div 1</button>
@@ -116,10 +97,20 @@
 <div class="bg9"></div>
 <br>
 
+<div class="gallery">
+            
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
 <br>
 <div class="hover-container">
     <div class="hover-trigger" (mouseenter)="isActive = true" (mouseleave)="isActive = false">Hover me</div>
     <div class="hidden-content" *ngIf="isActive">I appear on hover</div>
   </div>
   <button (click)="toggleActive()">Toggle Hidden Content</button>
+  
+
+  <div class="test"></div>
   

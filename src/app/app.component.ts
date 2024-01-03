@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-app';
   
+  // isSticky: boolean = false;
 
-  getArray(n: number) {
-    return new Array(n);
-  }
-
+  // @HostListener('window:scroll', ['$event'])
+  // handleScroll() {
+  //   // Check the scroll position and toggle the 'sticky' class accordingly
+  //   if (window.pageYOffset > 100) { // Adjust this value as needed
+  //     this.isSticky = true;
+  //   } else {
+  //     this.isSticky = false;
+  //   }
+  // }
 }

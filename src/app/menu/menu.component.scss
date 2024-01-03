@@ -24,7 +24,7 @@ $color:azure;
 
         display: flex;
         position: absolute;
-        width: 100%;
+        width: calc(100% + 0px);
         height: 7vh;
 
         box-sizing: border-box;
@@ -33,13 +33,13 @@ $color:azure;
         left: 0;
         margin: 0;
         padding: 0;
-
+        background: linear-gradient(85deg,rgb(119, 128, 255) 20%,rgb(79, 51, 132),rgb(27, 2, 80));
         // background: linear-gradient(to top,#003474,#1656a4,#013162);
-        // // background: linear-gradient(to top,#003474,#0b3b75,#013162);
+        // background: linear-gradient(to top,#003474,#0b3b75,#013162);
         // backdrop-filter: blur(10px);
-        background: none;
+        // background: none;
         box-shadow: 0px -6px 1rem rgba( #013162,1);
-        backdrop-filter: blur(5px);
+        // backdrop-filter: blur(5px);
 
         // border-bottom: 3px solid rgba(137, 43, 226, 0.636);
         // box-shadow: 0px 6px 1rem #013162;
@@ -90,7 +90,7 @@ $color:azure;
                 font-size: 20px;
 
                 top: auto;
-                left: 5%;
+                left: 4%;
               
                 padding: 0px 5px;
 

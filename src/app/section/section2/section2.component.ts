@@ -1,7 +1,9 @@
-import { Component,HostListener,NgModule,ViewChild } from '@angular/core';
+import { Component,HostListener,NgModule,ViewChild} from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-section2',
@@ -25,44 +27,6 @@ export class Section2Component {
     this.videoPlayer.nativeElement.volume = this.volume;
   }
 
-  pScore: number = 0;
-  cScore: number = 0;
-  introScreenVisible: boolean = true;
-  matchScreenVisible: boolean = false;
-  winnerText: string = "Choose an option";
-  playerChoice: string = "rock";
-  computerChoice: string = "rock";
-
-  startGame() {
-    this.introScreenVisible = false;
-    this.matchScreenVisible = true;
-  }
-
-  playMatch(playerChoice: string) {
-    const computerOptions = ["rock", "paper", "scissors"];
-    const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
-  
-    // Determine the winner
-    let winner: string;
-    if (playerChoice === computerChoice) {
-      winner = "It's a tie";
-    } else if (
-      (playerChoice === "rock" && computerChoice === "scissors") ||
-      (playerChoice === "paper" && computerChoice === "rock") ||
-      (playerChoice === "scissors" && computerChoice === "paper")
-    ) {
-      winner = "Player wins";
-      this.pScore++;
-    } else {
-      winner = "Computer wins";
-      this.cScore++;
-    }
-  
-    // Update properties
-    this.playerChoice = playerChoice;
-    this.computerChoice = computerChoice;
-    this.winnerText = winner;
-  }
   
   // -----------------------------------------
 

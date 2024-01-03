@@ -1,10 +1,29 @@
-<section id="section1">
-    <div [ngClass]="{'title':'true'}">
-        <h2>What about me ?</h2>
+<article>
+    <div class="row1">
+        <div class="col">
+            <div class="item1"><fa-icon [icon]="book"></fa-icon></div>
+            <div class="item2"><h3>Experiences</h3></div>
+            <div class="item3">3 Months in Web developer</div>
+        </div>
+        <div class="col">
+            <div class="item1"><fa-icon [icon]="bulb"></fa-icon></div>
+            <div class="item2"><h3>Experiences</h3></div>
+            <div class="item3"><p>14 months of training</p></div>
+        </div>
+        <div class="col">
+            <div class="item1"><fa-icon [icon]="cloudmr"></fa-icon></div>
+            <div class="item2"><h3>Experiences</h3></div>
+            <div class="item3"><p>14 months of training</p></div>
+        </div>
     </div>
+</article>
+<section id="section1">
     
     <div [ngClass]="{'container':'true'}">
-        <div class="blur"></div> 
+        <div class="blur">
+            <div class="title"><h2>What About <span>Me !</span></h2></div> 
+
+        </div>
     
         <div ngClass="scene">
             <span Class="shootingstar"[ngClass]="{'active': isHovered}"></span>
@@ -65,7 +84,7 @@
 
             <!-- .........2 Second Card.............  -->
 
-            <div id="box1" [ngClass]="{'box':'true'}"(mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+            <div id="box2" [ngClass]="{'box':'true'}"(mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
                 <div ngClass="poster">
 
                      <!-- mixed-blend-mode and bg filter -->
@@ -92,7 +111,7 @@
 
                         <div class="div3">
                             <p>There is no border in Music, that's my source of inspiration during a work project.</p>
-                            <p>I used to play football, and I realized that we're stronger as a Team to break the chains that bind us in order to go further.</p>
+                            <p>I used to play football and realized that as a team, we're stronger, breaking the chains that bind us to go further.</p>
                         </div>
 
                         <div ngClass="div4">
@@ -109,7 +128,7 @@
 
             <!-- .........3 Third Card.............  -->
 
-            <div id="box1" [ngClass]="{'box':'true'}"(mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+            <div id="box3" [ngClass]="{'box':'true'}"(mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
                 <div ngClass="poster">
 
                     <!-- mixed-blend-mode and bg filter -->
@@ -135,8 +154,8 @@
                         </div>
 
                         <div class="div3">
-                            <p>I really enjoy Limonade or a nice fresh soft drink (IceTea Peache...). </p>
-                            <p>I am on team Vanilla and Chocolate, as we know 'Sugar makes life sweeter'.</p> 
+                            <p>I really enjoy lemonade or a good cold soft drink like IceTea Peaches... </p>
+                            <p>I'm on Team Vanilla and Chocolate because, as they say, 'Sugar makes life sweeter'.</p> 
                             <p><fa-icon [icon]="smile"></fa-icon></p>
                         </div>
 
@@ -150,6 +169,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <button class="btncard">
+            <!-- <div class="btnshape"></div> -->
+        </button>
         
-    </div>
+        <div class="blur2"></div>
+
 </section>

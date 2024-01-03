@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
+import { DesignlayoutComponent } from './designlayout/designlayout.component';
 import { Section1Component } from './section/section1/section1.component';
 import { Section2Component } from './section/section2/section2.component';
 import { Section3Component } from './section/section3/section3.component';
@@ -10,6 +11,7 @@ import { Section5Component } from './section/section5/section5.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+
 
 
 const routes: Routes = [
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'section4', component: Section4Component },
   { path: 'section5', component: Section5Component },
   { path: 'footer', component: FooterComponent },
+  { path: 'designlayout', component: DesignlayoutComponent },
 
 ];
 
